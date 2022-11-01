@@ -5,6 +5,7 @@
     --background-color-2: rgb(245, 245, 245);
     --font-family: 'Poppins', sans-serif;
     --transition: .3s;
+    --border-radius: 10px;
 }
 
 * {
@@ -23,19 +24,19 @@ body.color-1 {
 }
 
 body.color-2 {
-    --primary-color: rgb(126 116 241);
+    --primary-color: rgb(26, 60, 161);
 }
 
 body.color-3 {
-    --primary-color: rgb(13 153 255);
+    --primary-color: red;
 }
 
 body.color-4 {
-    --primary-color: rgb(171 83 242);
+    --primary-color: yellow;
 }
 
 body.color-5 {
-    --primary-color: rgb(0, 155, 0);
+    --primary-color: limegreen;
 }
 
 body.dark {
@@ -120,13 +121,14 @@ html {
                     letter-spacing: 1px;
                     position: relative;
                     padding-bottom: 2px;
+                    transition: var(--transition);
 
                     &::before {
                         content: "";
                         position: absolute;
                         background-color: var(--primary-color);
                         height: 1px;
-                        width: 25px;
+                        width: 20px;
                         bottom: 0;
                         left: 0;
                         transition: var(--transition);
@@ -139,21 +141,43 @@ html {
                     i {
                         margin-right: 8px;
                         font-size: 18px;
+                        transition: 0s;
                     }
                 }
             }
         }
     }
 
-    .themeParent {
+    .settingsParent {
+        position: relative;
 
-        .theme {
+        .theme, .settings {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             cursor: pointer;
             position: relative;
+
+            &:hover {
+                animation: themeAnimation .9s forwards infinite ease-out;
+            }
+
+            @keyframes themeAnimation {
+                
+                from {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-4px);
+                }
+
+                to {
+                    transform: translateY(0);
+                }
+
+            }
 
             p {
                 color: var(--primary-color);
@@ -169,6 +193,75 @@ html {
                 color: var(--primary-color);
                 margin-right: 8px;
                 font-size: 18px;
+            }
+        }
+
+        .settingsMenu {
+            display: none;
+            height: 130px;
+            width: 300px;
+            background-color: var(--background-color-1);
+            border-radius: var(--border-radius);
+            position: absolute;
+            top: 55px;
+            left: 50%;
+            transform: translateX(-46%);
+            opacity: 0;
+            animation: settingsMenuAnimation .5s forwards;
+
+            @keyframes settingsMenuAnimation {
+
+                0% {
+                    top: 55px;
+                    opacity: 0;
+                }
+
+                100% {
+                    top: 70px;
+                    opacity: 1;
+                }
+
+            }
+
+            .theme {
+                margin-top: 15px;
+            }
+
+            .colorsParent {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 20px;
+
+                .colors {
+                    border-radius: 50%;
+                    height: 40px;
+                    width: 40px;
+                    background-color: var(--primary-color);
+                    cursor: pointer;
+                }
+
+                .colors.color-1 {
+                    --primary-color: rgb(107, 31, 128);
+                }
+
+                .colors.color-2 {
+                    --primary-color: rgb(26, 60, 161);
+                }
+
+                .colors.color-3 {
+                    --primary-color: red;
+                }
+
+                .colors.color-4 {
+                    --primary-color: yellow;
+                }
+
+                .colors.color-5 {
+                    --primary-color: limegreen;
+                }
             }
         }
     }
