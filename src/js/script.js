@@ -80,4 +80,35 @@ $(document).ready(function() {
 
     }
 
+    // This Function is for Mobile Menu
+
+    function mobileMenu() {
+
+        const mobile = {
+            toggle: $(".mobileMenuToggle"),
+            menu: $(".mobileMenuParent"),
+            links: $(".mobileMenuParent a")
+        }
+
+        mobile.toggle.click(function() {
+
+            mobile.menu.css({
+                display: "block",
+            })
+
+
+        })
+
+        mobile.links.click(function() {
+
+            mobile.menu.css({
+                display: "none",
+            })
+
+        })
+
+    }
+
+    mobileMenu();
+
 })

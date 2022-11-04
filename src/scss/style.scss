@@ -205,6 +205,80 @@ html {
     }
 }
 
+.mobileMenuParent {
+    display: none;
+    z-index: 9999999999;
+    background-color: var(--background-color-1);
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    animation: mobileMenuAnim var(--animation-duration) forwards;
+
+    @keyframes mobileMenuAnim {
+
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100vw;
+        }
+
+    }
+
+    .mobileMenu {
+        height: 100vh;
+        width: 100%;
+
+        a > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 20%;
+            border-bottom: 1px solid var(--primary-color);
+            transition: var(--transition);
+            
+            &:hover {
+                background-color: var(--primary-color);
+            }
+            
+            &:hover span,
+            &:hover i {
+                color: var(--background-color-1);
+            }
+            
+            span {
+                color: var(--primary-color);
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 40px;
+                text-transform: capitalize;
+                font-style: italic;
+                letter-spacing: 3px;
+                transition: var(--transition);
+            }
+            
+            i {
+                color: var(--primary-color);
+                font-size: 30px;
+                transition: var(--transition);
+                margin-right: 20px;
+            }
+        }
+
+        a[href = "#contact"] > div {
+            border: none;
+        }
+    }
+}
+
 
 
 // ----- ----- ----- --------------- ----- -----
