@@ -29,17 +29,31 @@ $(document).ready(function() {
 
     function NavBar() {
 
-        if($(window).scrollTop() > 0) {
+        if($(window).width() > 800) {
+            
+            if($(window).scrollTop() > 0) {
 
-            $(".navParent").css({
-                height: "70px",
-            })
+                $(".navParent").css({
+                    height: "70px",
+                })
 
-        } else {
+                $(".navParent .logoParent .logo").css({
+                    height: "45px",
+                    width: "45px",
+                })
+    
+            } else {
+    
+                $(".navParent").css({
+                    height: "90px",
+                })
 
-            $(".navParent").css({
-                height: "90px",
-            })
+                $(".navParent .logoParent .logo").css({
+                    height: "55px",
+                    width: "55px",
+                })
+    
+            }
 
         }
 

@@ -98,11 +98,45 @@ html {
 
     }
 
+    .mobileMenuToggle {
+        display: none;
+        cursor: pointer;
+        height: 100%;
+
+        .menuToggle {
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+            height: 2px;
+            width: 35px;
+            border-radius: var(--border-radius);
+            background-color: var(--primary-color);
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 35px;
+                left: 0;
+                background-color: var(--primary-color);
+            }
+
+            &::before {
+                top: -12px;
+            }
+
+            &::after {
+                bottom: -12px;
+            }
+        }
+    }
+
     .logoParent {
 
         .logo {
-            width: 45px;
-            height: 45px;
+            width: 55px;
+            height: 55px;
             border-radius: 50%;
             padding: 2px;
             border: 1px solid var(--primary-color);
