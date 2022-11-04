@@ -66,34 +66,4 @@ $(document).ready(function() {
 
     }
 
-    // This Function is For Dark & Light Mode
-
-    function Theme() {
-
-        const theme = {
-            parent: $(".theme"),
-            icon: $(".theme i"),
-            text: $(".theme p"),
-        }
-    
-        theme.parent.click(function() {
-    
-            if($("body").hasClass("dark")) {
-                $("body").removeClass("dark");
-                theme.icon.addClass("fa-moon");
-                theme.icon.removeClass("fa-sun");
-                theme.text.text("Dark");
-            } else {
-                $("body").addClass("dark");
-                theme.icon.removeClass("fa-moon");
-                theme.icon.addClass("fa-sun");
-                theme.text.text("Light");
-            }
-    
-        })
-
-    }
-
-    Theme();
-
 })
