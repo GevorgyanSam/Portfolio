@@ -23,6 +23,18 @@
     transition: var(--transition);
 }
 
+::-webkit-scrollbar {
+    background-color: var(--background-color-1);
+    width: 10px;
+    transition: var(--transition);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
 body.color-1 {
     --primary-color: rgb(107, 31, 128);
 }
