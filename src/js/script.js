@@ -111,4 +111,103 @@ $(document).ready(function() {
 
     mobileMenu();
 
+
+
+
+
+    // ===== ===== ===== ----- ----- ----- -----
+    // ===== ===== =====
+    // ===== ===== =====       Home
+    // ===== ===== =====
+    // ===== ===== ===== ----- ----- ----- -----
+
+
+
+
+
+    // This Function is for Changing Mode (Light or Dark)
+    
+    function themeFunc() {
+
+        const settings = {
+            themeBtn: $(".themeParent"),
+            themeIcon: $(".themeParent i"),
+        };
+
+        settings.themeBtn.click(function() {
+            
+            if($("body").hasClass("dark")) {
+                $("body").removeClass("dark");
+                settings.themeIcon.removeClass("fa-sun");
+                settings.themeIcon.addClass("fa-moon");
+            } else {
+                $("body").addClass("dark");
+                settings.themeIcon.removeClass("fa-moon");
+                settings.themeIcon.addClass("fa-sun");
+            }
+
+        })
+
+    }
+
+    themeFunc();
+
+    // This Function is for Changing Color
+
+    function openFunc() {
+
+        const gear = {
+            gearIcon: $(".settingsBtn"),
+            settingsParent: $(".settingsParent"),
+        }
+
+        gear.gearIcon.click(function() {
+
+            if(gear.settingsParent.hasClass("open")) {
+                gear.settingsParent.removeClass("open");
+                gear.settingsParent.addClass("close");
+            } else {
+                gear.settingsParent.removeClass("close");
+                gear.settingsParent.addClass("open");
+            }
+
+        })
+
+        const colors = {
+            color_1: $(".colors.color-1"),
+            color_2: $(".colors.color-2"),
+            color_3: $(".colors.color-3"),
+            color_4: $(".colors.color-4"),
+            color_5: $(".colors.color-5"),
+        }
+
+        changeColorFunc(colors.color_1);
+        changeColorFunc(colors.color_2);
+        changeColorFunc(colors.color_3);
+        changeColorFunc(colors.color_4);
+        changeColorFunc(colors.color_5);
+
+    }
+
+    openFunc();
+
+    // this function is for Changing Color
+
+    function changeColorFunc(color) {
+
+        color.click(function() {
+            let int = color.attr("class");
+            int = int["13"];
+
+            if(!$("body").hasClass(color)) {
+                for(let i = 1; i <= 5; i++) {
+                    $("body").removeClass("color-" + i);
+                }
+                $("body").addClass("color-" + int);
+            }
+
+        })
+
+    }
+
 })

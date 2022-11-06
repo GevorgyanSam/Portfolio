@@ -496,3 +496,115 @@
     }
 
 }
+
+@media only screen and (max-width: 800px) {
+
+    .settingsParent.open {
+        right: -240px !important;
+    }
+
+    .settingsParent {
+        height: 62px !important;
+        width: 275px !important;
+
+        .btnParent {
+
+            i {
+                font-size: 20px !important;
+            }
+        }
+
+        .colorsParent {
+
+            .colors {
+                width: 35px !important;
+                height: 35px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .settingsParent.open {
+        right: -215px !important;
+    }
+
+    .settingsParent {
+        height: 55px !important;
+        width: 250px !important;
+
+        .btnParent {
+
+            i {
+                font-size: 18px !important;
+            }
+        }
+
+        .colorsParent {
+
+            .colors {
+                width: 30px !important;
+                height: 30px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .settingsParent.open {
+        right: -200px !important;
+    }
+
+    .settingsParent {
+        height: 50px !important;
+        width: 230px !important;
+
+        .btnParent {
+
+            i {
+                font-size: 17px !important;
+            }
+        }
+
+        .colorsParent {
+
+            .colors {
+                width: 28px !important;
+                height: 28px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .settingsParent.open {
+        right: -172px !important;
+    }
+
+    .settingsParent {
+        height: 50px !important;
+        width: 200px !important;
+
+        .btnParent {
+
+            i {
+                font-size: 16px !important;
+            }
+        }
+
+        .colorsParent {
+
+            .colors {
+                width: 25px !important;
+                height: 25px !important;
+            }
+        }
+    }
+
+}
