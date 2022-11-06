@@ -448,6 +448,20 @@ html {
     text-align: center;
     z-index: 999;
     transition: var(--transition);
+    animation: settingsAnim var(--animation-duration) forwards 1.2s;
+    transform: translateX(150px);
+
+    @keyframes settingsAnim {
+
+        0% {
+            transform: translateX(150px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+    }
 
     .btnParent {
         height: 100%;
