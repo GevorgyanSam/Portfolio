@@ -195,6 +195,11 @@ $(document).ready(function() {
 
     function changeColorFunc(color) {
 
+        const gear = {
+            gearIcon: $(".settingsBtn"),
+            settingsParent: $(".settingsParent"),
+        }
+
         color.click(function() {
             let int = color.attr("class");
             int = int["13"];
@@ -205,6 +210,9 @@ $(document).ready(function() {
                 }
                 $("body").addClass("color-" + int);
             }
+        
+            gear.settingsParent.removeClass("close");
+            gear.settingsParent.addClass("open");
 
         })
 
