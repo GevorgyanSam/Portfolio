@@ -62,7 +62,6 @@ body.dark {
 }
 
 body {
-    overflow-x: hidden; // ===== =====
     background-color: var(--background-color-1);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -294,9 +293,9 @@ html {
 
 
 
-// ----- ----- ----- --------------- ----- -----
-// ----- ----- ----- Home ----- -----
-// ----- ----- ----- --------------- ----- -----
+// ----- ----- ----- ---- ----- ----- -----
+// ----- ----- ----- Home ----- ----- -----
+// ----- ----- ----- ---- ----- ----- -----
 
 
 
@@ -393,6 +392,7 @@ html {
             font-weight: 600;
             letter-spacing: 3px;
             position: relative;
+            text-transform: uppercase;
 
             &::before {
                 content: "";
@@ -532,6 +532,61 @@ html {
 
         .color-5 {
             background-color: rgb(202, 95, 24);
+        }
+    }
+}
+
+
+
+// ----- ----- ----- ----- ----- ----- -----
+// ----- ----- ----- About ----- ----- -----
+// ----- ----- ----- ----- ----- ----- -----
+
+
+
+#about {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+.aboutParent {
+    padding: 0 200px;
+
+    .aboutHeader {
+
+        h2 {
+            color: var(--theme-color);
+            padding-left: 35px;
+            font-size: 14px;
+            font-family: var(--font-family-2);
+            font-weight: 600;
+            letter-spacing: 3px;
+            position: relative;
+            text-transform: uppercase;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 20px;
+                background-color: var(--theme-color);
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        h1 {
+            margin-top: 10px;
+            color: var(--theme-color);
+            font-size: 50px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            text-transform: capitalize;
+
+            span {
+                color: var(--primary-color);
+            }
         }
     }
 }
