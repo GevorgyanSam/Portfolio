@@ -8,6 +8,7 @@ $(document).ready(function() {
 
         NavBar();
         ActiveLink();
+        AboutScrollAnimation();
 
     })
 
@@ -215,6 +216,24 @@ $(document).ready(function() {
             gear.settingsParent.addClass("open");
 
         })
+
+    }
+
+    // This Function Is For Scroll Animation
+
+    function AboutScrollAnimation() {
+
+        var about = $("#about");
+        var wScroll = $(window).scrollTop() + $(window).height();
+        var aboutAnimationParent = about.offset().top + about.height() / 2;
+
+        if(wScroll >= aboutAnimationParent) {
+
+            $("#aboutAnimationParent").css({
+                display: "block",
+            })
+
+        }
 
     }
 

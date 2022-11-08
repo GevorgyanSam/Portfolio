@@ -25,7 +25,7 @@
 
 ::-webkit-scrollbar {
     background-color: var(--background-color-1);
-    width: 10px;
+    width: 8px;
     transition: var(--transition);
 }
 
@@ -551,12 +551,34 @@ html {
 
 .aboutParent {
     background-color: var(--background-color-2);
+    min-height: 790px;
 }
 
 .aboutParent, .sectionWidthParent {
     padding: 70px 200px;
 
+    #aboutAnimationParent {
+        display: none;
+    }
+
     .aboutHeader, .sectionHeader {
+        animation: HeaderAnim var(--animation-duration) forwards .5s;
+        opacity: 0;
+        transform: translateX(-70px);
+
+        @keyframes HeaderAnim {
+
+            0% {
+                opacity: 0;
+                transform: translateX(-70px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        }
 
         h2 {
             color: var(--theme-color);
@@ -615,6 +637,20 @@ html {
                 height: 50vh;
                 border-radius: var(--border-radius);
                 position: relative;
+                animation: aboutImgAnim var(--animation-duration) forwards 1s;
+                transform: scale(0.0);
+
+                @keyframes aboutImgAnim {
+
+                    0% {
+                        transform: scale(0.0);
+                    }
+                    
+                    100% {
+                        transform: scale(1.0);
+                    }
+
+                }
 
                 &::before {
                     content: "";
@@ -624,9 +660,22 @@ html {
                     top: 0;
                     left: 0;
                     background-color: var(--primary-color);
-                    transform: rotate(-7deg);
+                    transform: rotate(0deg);
                     border-radius: var(--border-radius);
                     transition: var(--transition);
+                    animation: aboutRotateAnim .5s forwards 1.5s;
+
+                    @keyframes aboutRotateAnim {
+
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        
+                        100% {
+                            transform: rotate(-7deg);
+                        }
+
+                    }
                 }
 
                 img {
@@ -641,6 +690,20 @@ html {
         }
 
         .aboutContent {
+
+            @keyframes aboutContentAnim {
+                
+                0% {
+                    transform: translateX(-70px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+
+            }
             
             h1 {
                 font-size: 30px;
@@ -650,6 +713,10 @@ html {
                 font-family: var(--font-family);
                 font-weight: 400;
                 letter-spacing: 1px;
+                animation: aboutContentAnim var(--animation-duration) forwards;
+                animation-delay: 1.5s;
+                transform: translateX(-70px);
+                opacity: 0;
 
                 span {
                     color: var(--primary-color);
@@ -664,6 +731,10 @@ html {
                 font-weight: 400;
                 text-transform: capitalize;
                 font-family: var(--font-family);
+                animation: aboutContentAnim var(--animation-duration) forwards;
+                animation-delay: 1.8s;
+                transform: translateX(-70px);
+                opacity: 0;
             }
 
             .dateParent {
@@ -672,6 +743,10 @@ html {
                 align-items: center;
                 text-align: start;
                 justify-content: flex-start;
+                animation: aboutContentAnim var(--animation-duration) forwards;
+                animation-delay: 2.1s;
+                transform: translateX(-70px);
+                opacity: 0;
 
                 p, a {
                     color: var(--theme-color);
@@ -706,6 +781,10 @@ html {
                 color: var(--primary-color);
                 border: 1px solid var(--primary-color);
                 transition: var(--transition);
+                animation: aboutContentAnim var(--animation-duration) forwards;
+                animation-delay: 2.3s;
+                transform: translateX(-70px);
+                opacity: 0;
 
                 &:hover {
                     border-color: transparent;
@@ -727,6 +806,10 @@ html {
 
 .skillsParent {
     background-color: var(--background-color-1);
+
+    #skillsAnimationParent {
+        // display: none;
+    }
 }
 
 
@@ -739,6 +822,10 @@ html {
 
 .worksParent {
     background-color: var(--background-color-2);
+
+    #worksAnimationParent {
+        // display: none;
+    }
 }
 
 
@@ -751,4 +838,8 @@ html {
 
 .contactParent {
     background-color: var(--background-color-1);
+
+    #contactAnimationParent {
+        // display: none;
+    }
 }
