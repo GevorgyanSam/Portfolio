@@ -888,31 +888,31 @@ html {
                         transition: var(--transition);
                     }
 
-                    &::before {
-                        content: "#{$content}";
-                        position: absolute;
-                        transform: translateX(-50%);
-                        left: $content;
-                        top: -30px;
-                        color: var(--primary-color);
-                        font-size: 18px;
-                        letter-spacing: 1px;
-                        font-weight: 400;
-                        transition: var(--transition);
-                    }
-
                     // &::before {
-                    //     content: "";
+                    //     content: "#{$content}";
                     //     position: absolute;
-                    //     background-color: var(--primary-color);
-                    //     height: 1px;
-                    //     width: 100%;
-                    //     left: 0;
-                    //     top: 50%;
-                    //     transform: translateY(-50%);
-                    //     border-radius: var(--border-radius);
+                    //     transform: translateX(-50%);
+                    //     left: $content;
+                    //     top: -30px;
+                    //     color: var(--primary-color);
+                    //     font-size: 18px;
+                    //     letter-spacing: 1px;
+                    //     font-weight: 400;
                     //     transition: var(--transition);
                     // }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--primary-color);
+                        height: 1px;
+                        width: 100%;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-radius: var(--border-radius);
+                        transition: var(--transition);
+                    }
 
                 }
 
