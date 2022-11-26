@@ -809,7 +809,7 @@ html {
 
 .skillsParent {
     background-color: var(--background-color-1);
-    // min-height: ;
+    min-height: 760px;
 
     #skillsAnimationParent {
         display: none;
@@ -824,6 +824,40 @@ html {
 
         .skillsContent {
             width: 40%;
+
+            @mixin skills_animation_1($delay) {
+                
+                animation: skills_animation_1 var(--animation-duration) forwards $delay;
+                opacity: 0;
+                transform: translateX(-70px);
+
+                @keyframes skills_animation_1 {
+
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-70px);
+                    }
+                    
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                }
+                
+            }
+
+            .skillsContentChild:nth-child(1) {
+                @include skills_animation_1(1s);
+            }
+
+            .skillsContentChild:nth-child(2) {
+                @include skills_animation_1(1.2s);
+            }
+
+            .skillsContentChild:nth-child(3) {
+                @include skills_animation_1(1.4s);
+            }
 
             .skillsContentChild {
                 display: flex;
@@ -842,6 +876,7 @@ html {
                     i {
                         color: var(--primary-color);
                         font-size: 35px;
+                        transition: var(--transition);
                     }
 
                     h3 {
@@ -850,6 +885,7 @@ html {
                         letter-spacing: 1px;
                         font-size: 35px;
                         font-weight: 400;
+                        transition: var(--transition);
                     }
 
                     p {
@@ -888,30 +924,52 @@ html {
                         transition: var(--transition);
                     }
 
-                    // &::before {
-                    //     content: "#{$content}";
-                    //     position: absolute;
-                    //     transform: translateX(-50%);
-                    //     left: $content;
-                    //     top: -30px;
-                    //     color: var(--primary-color);
-                    //     font-size: 18px;
-                    //     letter-spacing: 1px;
-                    //     font-weight: 400;
-                    //     transition: var(--transition);
-                    // }
-
                     &::before {
                         content: "";
                         position: absolute;
                         background-color: var(--primary-color);
                         height: 1px;
-                        width: 100%;
+                        width: 0;
                         left: 0;
                         top: 50%;
                         transform: translateY(-50%);
                         border-radius: var(--border-radius);
                         transition: var(--transition);
+                        animation: skills_animation_2 var(--animation-duration) forwards 1.6s;
+                    }
+
+                    @keyframes skills_animation_2 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 100%;
+                        }
+
+                    }
+
+                }
+
+                @mixin skills_text_animation($delay) {
+
+                    animation: skills_text_animation var(--animation-duration) forwards $delay;
+                    transform: translateX(-30px);
+                    opacity: 0;
+
+                    @keyframes skills_text_animation {
+
+                        0% {
+                            transform: translateX(-30px);
+                            opacity: 0;
+                        }
+                        
+                        100% {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+
                     }
 
                 }
@@ -937,44 +995,254 @@ html {
                     }
                 }
 
+                .html h2 {
+                    @include skills_text_animation(2.6s);
+                }
+
                 .html .progressbar {
                     @include progressbar(95%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_3 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_3 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 95%;
+                        }
+
+                    }
+                }
+
+                .css h2 {
+                    @include skills_text_animation(2.7s);
                 }
 
                 .css .progressbar {
                     @include progressbar(85%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_4 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_4 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 85%;
+                        }
+
+                    }
+                }
+
+                .js h2 {
+                    @include skills_text_animation(2.8s);
                 }
 
                 .js .progressbar {
                     @include progressbar(70%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_5 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_5 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 70%;
+                        }
+
+                    }
+                }
+
+                .php h2 {
+                    @include skills_text_animation(2.9s);
                 }
 
                 .php .progressbar {
                     @include progressbar(50%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_6 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_6 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 50%;
+                        }
+
+                    }
+                }
+
+                .mysql h2 {
+                    @include skills_text_animation(3s);
                 }
 
                 .mysql .progressbar {
                     @include progressbar(85%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_7 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_7 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 85%;
+                        }
+
+                    }
+                }
+
+                .ajax h2 {
+                    @include skills_text_animation(3.1s);
                 }
 
                 .ajax .progressbar {
                     @include progressbar(65%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_8 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_8 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 65%;
+                        }
+
+                    }
+                }
+
+                .jquery h2 {
+                    @include skills_text_animation(3.2s);
                 }
 
                 .jquery .progressbar {
                     @include progressbar(70%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_9 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_9 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 70%;
+                        }
+
+                    }
+                }
+
+                .bootstrap h2 {
+                    @include skills_text_animation(3.3s);
                 }
 
                 .bootstrap .progressbar {
                     @include progressbar(75%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_10 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_10 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 75%;
+                        }
+
+                    }
+                }
+
+                .sass h2 {
+                    @include skills_text_animation(3.4s);
                 }
 
                 .sass .progressbar {
                     @include progressbar(75%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_11 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_11 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 75%;
+                        }
+
+                    }
+                }
+
+                .git h2 {
+                    @include skills_text_animation(3.5s);
                 }
 
                 .git .progressbar {
                     @include progressbar(90%);
+                    
+                    &::after {
+                        width: 0;
+                        animation: skills_animation_12 var(--animation-duration) forwards 2.2s;
+                    }
+
+                    @keyframes skills_animation_12 {
+
+                        0% {
+                            width: 0;
+                        }
+
+                        100% {
+                            width: 90%;
+                        }
+
+                    }
                 }
             }
         }
