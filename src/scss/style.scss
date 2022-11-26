@@ -4,7 +4,7 @@
 :root {
     --background-color-1: rgb(255, 255, 255);
     --background-color-2: rgb(245, 245, 245);
-    --theme-color: rgb(50, 50, 50);
+    --theme-color: rgb(40, 40, 40);
     --font-family: 'Poppins', sans-serif;
     --font-family-2: 'Cinzel', serif;
     --transition: .3s;
@@ -818,15 +818,11 @@ html {
         margin-top: 20px;
         display: flex;
         align-items: flex-start;
-        justify-content: space-evenly;
+        justify-content: space-between;
         text-align: start;
 
-        > div {
-            width: 45%;
-            margin: 0 1%;
-        }
-
         .skillsContent {
+            width: 40%;
 
             .skillsContentChild {
                 display: flex;
@@ -834,7 +830,7 @@ html {
                 justify-content: flex-start;
                 text-align: start;
                 text-transform: capitalize;
-                margin: 35px 0;
+                margin: 50px 0;
 
                 .child:nth-of-type(2) {
                     margin-left: 40px;
@@ -858,10 +854,126 @@ html {
                     p {
                         color: var(--theme-color);
                         letter-spacing: 1px;
-                        font-size: 17px;
-                        margin-top: 10px;
+                        font-size: 15px;
+                        margin-top: 5px;
                         line-height: 25px;
                     }
+                }
+            }
+        }
+
+        .progressParent {
+            width: 57%;
+            margin-left: 3%;
+
+            .progressChild {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-around;
+                text-align: start;
+
+                @mixin progressbar($content) {
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        height: 100%;
+                        width: $content;
+                        background-color: var(--primary-color);
+                        border-radius: var(--border-radius);
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        transition: var(--transition);
+                    }
+
+                    // &::before {
+                    //     content: "#{$content}";
+                    //     position: absolute;
+                    //     transform: translateX(-50%);
+                    //     left: $content;
+                    //     top: -30px;
+                    //     color: var(--primary-color);
+                    //     font-size: 18px;
+                    //     letter-spacing: 1px;
+                    //     font-weight: 400;
+                    //     transition: var(--transition);
+                    // }
+
+                    // &::before {
+                    //     content: "";
+                    //     position: absolute;
+                    //     background-color: var(--primary-color);
+                    //     height: 1px;
+                    //     width: 100%;
+                    //     left: 0;
+                    //     top: 50%;
+                    //     transform: translateY(-50%);
+                    //     border-radius: var(--border-radius);
+                    //     transition: var(--transition);
+                    // }
+
+                }
+
+                .progress {
+                    margin-top: 45px;
+                    
+                    h2 {
+                        letter-spacing: 2px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-family: var(--font-family);
+                        color: var(--theme-color);
+                    }
+
+                    .progressbar {
+                        position: relative;
+                        margin-top: 10px;
+                        height: 6px;
+                        width: 270px;
+                        border-radius: var(--border-radius);
+                    }
+                }
+
+                .html .progressbar {
+                    @include progressbar(95%);
+                }
+
+                .css .progressbar {
+                    @include progressbar(85%);
+                }
+
+                .js .progressbar {
+                    @include progressbar(70%);
+                }
+
+                .php .progressbar {
+                    @include progressbar(50%);
+                }
+
+                .mysql .progressbar {
+                    @include progressbar(85%);
+                }
+
+                .ajax .progressbar {
+                    @include progressbar(65%);
+                }
+
+                .jquery .progressbar {
+                    @include progressbar(70%);
+                }
+
+                .bootstrap .progressbar {
+                    @include progressbar(75%);
+                }
+
+                .sass .progressbar {
+                    @include progressbar(75%);
+                }
+
+                .git .progressbar {
+                    @include progressbar(90%);
                 }
             }
         }
