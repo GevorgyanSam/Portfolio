@@ -8,9 +8,30 @@ $(document).ready(function() {
 
         NavBar();
         ActiveLink();
-        AboutScrollAnimation();
+        ScrollAnimation($("#about"), $("#aboutAnimationParent"));
+        ScrollAnimation($("#skills"), $("#skillsAnimationParent"));
+        ScrollAnimation($("#works"), $("#worksAnimationParent"));
+        ScrollAnimation($("#contact"), $("#contactAnimationParent"));
 
     })
+
+    // This Function Is For Scroll Animation
+
+    function ScrollAnimation(id, animation) {
+
+        var section = id;
+        var wScroll = $(window).scrollTop() + $(window).height();
+        var AnimationParent = section.offset().top + section.height() / 2;
+
+        if(wScroll >= AnimationParent) {
+
+            animation.css({
+                display: "block",
+            })
+
+        }
+
+    }
 
 
 
@@ -216,24 +237,6 @@ $(document).ready(function() {
             gear.settingsParent.addClass("open");
 
         })
-
-    }
-
-    // This Function Is For Scroll Animation
-
-    function AboutScrollAnimation() {
-
-        var about = $("#about");
-        var wScroll = $(window).scrollTop() + $(window).height();
-        var aboutAnimationParent = about.offset().top + about.height() / 2;
-
-        if(wScroll >= aboutAnimationParent) {
-
-            $("#aboutAnimationParent").css({
-                display: "block",
-            })
-
-        }
 
     }
 
