@@ -37,15 +37,19 @@ $(document).ready(function() {
 
     $(window).mousemove((e) => {
 
-        let cursor = $(".mouse");
-        let x = e.pageX;
-        let y = e.pageY;
+        if($(this).width() > 1000) {
 
-        cursor.css({
-            left: x + "px",
-            top: y + "px",
-            opacity: "1",
-        })
+            let cursor = $(".mouse");
+            let x = e.pageX;
+            let y = e.pageY;
+    
+            cursor.css({
+                left: x + "px",
+                top: y + "px",
+                opacity: "1",
+            })
+
+        }
 
     })
 

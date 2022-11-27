@@ -1210,3 +1210,206 @@
     }
 
 }
+
+
+
+// ----- ----- ----- ------ ----- ----- -----
+// ----- ----- ----- Skills ----- ----- -----
+// ----- ----- ----- ------ ----- ----- -----
+
+
+
+@media only screen and (max-width: 1500px) {
+
+    .skillsParent {
+        min-height: 690px !important;
+
+        .skillsContentParent {
+            margin-top: 0 !important;
+
+            .skillsContent {
+    
+                .skillsContentChild {
+                    margin: 45px 0 !important;
+                    
+                    .child:nth-of-type(2) {
+                        margin-left: 35px !important;
+                    }
+    
+                    .child {
+    
+                        i {
+                            font-size: 32px !important;
+                        }
+    
+                        h3 {
+                            font-size: 32px !important;
+                        }
+    
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+
+            .progressParent {
+
+                .progressChild {
+                    justify-content: space-evenly !important;
+                        
+                    .progress {
+                        margin-top: 40px !important;
+                        
+                        h2 {
+                            letter-spacing: 1px !important;
+                            font-size: 15px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+        .skillsParent {
+        min-height: 685px !important;
+
+        .skillsContentParent {
+            margin-top: 0 !important;
+
+            .skillsContent {
+    
+                .skillsContentChild {
+                    margin: 40px 0 !important;
+                    
+                    .child:nth-of-type(2) {
+                        margin-left: 30px !important;
+                    }
+    
+                    .child {
+    
+                        i {
+                            font-size: 30px !important;
+                        }
+    
+                        h3 {
+                            font-size: 30px !important;
+                        }
+    
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+
+            .progressParent {
+                width: 60% !important;
+                margin-left: 0 !important;
+
+                .progressChild {
+
+                    .progress {
+                        margin-top: 40px !important;
+                        
+                        h2 {
+                            letter-spacing: 1px !important;
+                            font-size: 15px !important;
+                        }
+
+                        .progressbar {
+                            margin-top: 10px !important;
+                            width: 250px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1300px) {
+
+        .skillsParent {
+        min-height: 1020px !important;
+
+        .skillsContentParent {
+            margin-top: 0 !important;
+            display: block !important;
+
+            > div {
+                width: 100% !important;
+            }
+
+            .skillsContent {
+    
+                .skillsContentChild {
+                    margin: 30px 0 !important;
+                    
+                    .child:nth-of-type(2) {
+                        margin-left: 40px !important;
+                    }
+    
+                    .child {
+    
+                        i {
+                            font-size: 35px !important;
+                        }
+    
+                        h3 {
+                            font-size: 35px !important;
+                        }
+    
+                        p {
+                            font-size: 18px !important;
+                            letter-spacing: 1px !important;
+                            margin-top: 10px !important;
+                        }
+                    }
+                }
+            }
+
+            .progressParent {
+                margin-left: 0 !important;
+                width: 100% !important;
+                margin-top: 60px !important;
+
+                .progressChild {
+                    align-items: flex-start !important;
+                    justify-content: flex-start !important;
+                    text-align: start !important;
+
+                    > div:nth-child(2) {
+                        margin-left: 80px !important;
+                    }
+
+                    .progress:last-child {
+                        margin-bottom: 0 !important;
+                    }
+
+                    .progress {
+                        margin-top: 0 !important;
+                        margin-bottom: 35px !important;
+                        
+                        h2 {
+                            letter-spacing: 1px !important;
+                            font-size: 18px !important;
+                        }
+
+                        .progressbar {
+                            margin-top: 15px !important;
+                            width: 380px !important;
+                            height: 8px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
