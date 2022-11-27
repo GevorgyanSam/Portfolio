@@ -33,6 +33,22 @@ $(document).ready(function() {
 
     }
 
+    // This Function is For Cursor
+
+    $(window).mousemove((e) => {
+
+        let cursor = $(".mouse");
+        let x = e.pageX;
+        let y = e.pageY;
+
+        cursor.css({
+            left: x + "px",
+            top: y + "px",
+            opacity: "1",
+        })
+
+    })
+
 
 
 
