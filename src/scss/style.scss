@@ -1278,10 +1278,103 @@ html {
 
 .worksParent {
     background-color: var(--background-color-2);
-    // min-height: ;
+    min-height: 1000px;
 
     #worksAnimationParent {
         display: none;
+    }
+
+    .worksContentParent {
+        margin-top: 70px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-flow: wrap row;
+        text-align: start;
+        gap: 50px;
+
+        .worksContent:nth-child(1),
+        .worksContent:nth-child(4),
+        .worksContent:nth-child(7) {
+            animation: worksAnimation var(--animation-duration) forwards 1.2s;
+        }
+
+        .worksContent:nth-child(2),
+        .worksContent:nth-child(5),
+        .worksContent:nth-child(8) {
+            animation: worksAnimation var(--animation-duration) forwards 1.5s;
+        }
+
+        .worksContent:nth-child(3),
+        .worksContent:nth-child(6),
+        .worksContent:nth-child(9) {
+            animation: worksAnimation var(--animation-duration) forwards 1.8s;
+        }
+
+        @keyframes worksAnimation {
+
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        }
+
+        .worksContent {
+            transform: translateX(-50px);
+            opacity: 0;
+            width: 450px;
+            cursor: pointer;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+
+            &:hover img {
+                scale: 1.2;
+            }
+
+            .worksImageParent {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: var(--border-radius);
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: var(--border-radius);
+                object-fit: cover;
+                object-position: center;
+                transform-origin: center;
+                transition: var(--transition);
+            }
+
+            h3 {
+                margin-top: 15px;
+                margin-left: 5px;
+                font-family: var(--font-family);
+                color: var(--primary-color);
+                font-size: 30px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+
+            p {
+                text-transform: capitalize;
+                margin-left: 5px;
+                margin-top: 5px;
+                color: var(--theme-color);
+                letter-spacing: 1px;
+                font-size: 16px;
+                font-family: var(--font-family);
+            }
+        }
     }
 }
 
