@@ -1293,22 +1293,28 @@ html {
         text-align: start;
         gap: 50px;
 
-        .worksContent:nth-child(1),
-        .worksContent:nth-child(4),
-        .worksContent:nth-child(7) {
+        .worksContent:nth-child(1) {
             animation: worksAnimation var(--animation-duration) forwards 1.2s;
         }
 
-        .worksContent:nth-child(2),
-        .worksContent:nth-child(5),
-        .worksContent:nth-child(8) {
-            animation: worksAnimation var(--animation-duration) forwards 1.5s;
+        .worksContent:nth-child(2) {
+            animation: worksAnimation var(--animation-duration) forwards 1.4s;
         }
 
-        .worksContent:nth-child(3),
-        .worksContent:nth-child(6),
-        .worksContent:nth-child(9) {
+        .worksContent:nth-child(3) {
+            animation: worksAnimation var(--animation-duration) forwards 1.6s;
+        }
+
+        .worksContent:nth-child(4) {
             animation: worksAnimation var(--animation-duration) forwards 1.8s;
+        }
+
+        .worksContent:nth-child(5) {
+            animation: worksAnimation var(--animation-duration) forwards 2s;
+        }
+
+        .worksContent:nth-child(6) {
+            animation: worksAnimation var(--animation-duration) forwards 2.2s;
         }
 
         @keyframes worksAnimation {

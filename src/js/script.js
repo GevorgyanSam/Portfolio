@@ -278,31 +278,35 @@ $(document).ready(function() {
 
     function worksContentHover() {
 
-        const worksContent = {
-            content: $(".worksImageParent"),
-            image: $(".worksContent img"),
-        };
+        if($(window).width() > 1000) {
 
-        worksContent.content.mouseenter(function() {
-            worksContent.content.mousemove(function(e) {
-
-                let x = e.offsetX;
-                let y = e.offsetY;
-
-                worksContent.image.css({
-                    "transform-origin": x + "px " + y + "px",
-                })
-
-            })
-        })
-
-        $(".worksImageParent + div").mouseenter(function() {
-            $(".worksImageParent + div").mousemove(function() {
-                worksContent.image.css({
-                    "transform-origin": "center",
+            const worksContent = {
+                content: $(".worksImageParent"),
+                image: $(".worksContent img"),
+            };
+    
+            worksContent.content.mouseenter(function() {
+                worksContent.content.mousemove(function(e) {
+    
+                    let x = e.offsetX;
+                    let y = e.offsetY;
+    
+                    worksContent.image.css({
+                        "transform-origin": x + "px " + y + "px",
+                    })
+    
                 })
             })
-        })
+    
+            $(".worksImageParent + div").mouseenter(function() {
+                $(".worksImageParent + div").mousemove(function() {
+                    worksContent.image.css({
+                        "transform-origin": "center",
+                    })
+                })
+            })
+
+        }
 
     }
 
