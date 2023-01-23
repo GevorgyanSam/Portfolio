@@ -5,6 +5,7 @@
     --background-color-1: rgb(255, 255, 255);
     --background-color-2: rgb(245, 245, 245);
     --theme-color: rgb(40, 40, 40);
+    --error-color: #9c1c1c;
     --font-family: 'Poppins', sans-serif;
     --font-family-2: 'Cinzel', serif;
     --transition: .3s;
@@ -789,10 +790,10 @@ html {
             }
 
             button {
-                margin-top: 50px;
+                margin-top: 45px;
                 border-radius: var(--border-radius);
-                padding: 10px 25px;
-                font-size: 18px;
+                padding: 9px 23px;
+                font-size: 17px;
                 font-family: var(--font-family);
                 border: none;
                 outline: none;
@@ -1394,9 +1395,171 @@ html {
 
 .contactParent {
     background-color: var(--background-color-1);
-    // min-height: ;
+    min-height: 760px;
 
     #contactAnimationParent {
         display: none;
+    }
+
+    .contactContentParent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        text-align: start;
+        margin-top: 40px;
+
+        > div {
+            width: 100%;
+        }
+
+        .contactFormParent {
+
+            .contactForm {
+                display: flex;
+                align-items: flex-start;
+                text-align: start;
+                justify-content: flex-start;
+            }
+
+            .formItem {
+                transform: translateX(-70px);
+                opacity: 0;
+                animation: contactFormAnim var(--animation-duration) forwards;
+                position: relative;
+                margin: 15px;
+
+                input.err, textarea.err {
+                    border: 1px solid var(--error-color);
+                    caret-color: var(--error-color);
+                }
+
+                input, textarea {
+                    color: var(--theme-color);
+                    font-size: 17px;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    padding: 15px;
+                    border: none;
+                    outline: none;
+                    resize: none;
+                    background-color: var(--background-color-1);
+                    border: 1px solid var(--primary-color);
+                    border-radius: var(--border-radius);
+                    caret-color: var(--primary-color);
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::selection {
+                        background-color: transparent;
+                        color: var(--primary-color);
+                    }
+                }
+
+                input {
+                    height: 55px;
+                    width: 300px;
+                }
+
+                textarea {
+                    height: 200px;
+                    width: 630px;
+                }
+
+                label {
+                    padding: 0 5px;
+                    position: absolute;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    color: var(--primary-color);
+                    letter-spacing: 1px;
+                    background-color: var(--background-color-1);
+                    left: 15px;
+                    top: 15px;
+                    font-size: 17px;
+                    transition: var(--transition);
+                    border-radius: var(--border-radius);
+                }
+
+                label.valid {
+                    left: 10px;
+                    top: -12px;
+                    font-size: 15px;
+                }
+
+                label.notValid {
+                    left: 15px;
+                    top: 15px;
+                    font-size: 17px;
+                }
+
+                label.err {
+                    color: var(--error-color);
+                }
+
+                #submit {
+                    margin-top: 10px;
+                    border-radius: var(--border-radius);
+                    padding: 9px 23px;
+                    font-size: 17px;
+                    font-family: var(--font-family);
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    letter-spacing: 1px;
+                    color: var(--primary-color);
+                    background-color: var(--background-color-1);
+                    border: 1px solid var(--primary-color);
+                    transition: var(--transition);
+
+                    &:hover {
+                        border-color: transparent;
+                        color: white;
+                        background-color: var(--primary-color);
+                    }
+                }
+            }
+
+            @keyframes contactFormAnim {
+
+                0% {
+                    transform: translateX(-70px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+
+            }
+
+            .formItem1 {
+                animation-delay: 1s;
+            }
+
+            .formItem2 {
+                animation-delay: 1.2s;
+            }
+
+            .formItem3 {
+                animation-delay: 1.4s;
+            }
+
+            .formItem4 {
+                animation-delay: 1.6s;
+            }
+
+            .formItem5 {
+                animation-delay: 1.8s;
+            }
+
+            .formItem6 {
+                animation-delay: 2s;
+            }
+        }
     }
 }

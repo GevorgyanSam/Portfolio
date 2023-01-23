@@ -312,4 +312,88 @@ $(document).ready(function() {
 
     worksContentHover();
 
+
+
+
+
+    // ===== ===== ===== ----- ----- ----- -----
+    // ===== ===== =====
+    // ===== ===== =====       Contact
+    // ===== ===== =====
+    // ===== ===== ===== ----- ----- ----- -----
+
+
+
+
+
+    // This Function is For Contact Section
+
+    function contact() {
+
+        const form = {
+            name: {
+                inp: $("#name"),
+                label: $("#nameLabel"),
+            },
+            lastName: {
+                inp: $("#lastName"),
+                label: $("#lastNameLabel"),
+            },
+            email: {
+                inp: $("#email"),
+                label: $("#emailLabel"),
+            },
+            subject: {
+                inp: $("#subject"),
+                label: $("#subjectLabel"),
+            },
+            message: {
+                inp: $("#message"),
+                label: $("#messageLabel"),
+            },
+            submit: $("#submit"),
+        }
+
+        function labelFocus(input, label) {
+
+            input.focus(() => {
+
+                if(input.val() == 0) {
+                    label.removeClass("notValid");
+                    label.addClass("valid");
+                } else if(input.val() > 0){
+                    label.removeClass("valid");
+                    label.addClass("notValid");
+                }
+
+            })
+
+            input.blur(() => {
+
+                if(input.val() == 0) {
+                    label.removeClass("valid");
+                    label.addClass("notValid");
+                } else if(input.val() > 0){
+                    label.removeClass("notValid");
+                    label.addClass("valid");
+                }
+
+            })
+
+        }
+
+        labelFocus(form.name.inp, form.name.label);
+        labelFocus(form.lastName.inp, form.lastName.label);
+        labelFocus(form.email.inp, form.email.label);
+        labelFocus(form.subject.inp, form.subject.label);
+        labelFocus(form.message.inp, form.message.label);
+
+        form.submit.click(function(e) {
+            e.preventDefault();
+        })
+
+    }
+
+    contact();
+
 })
