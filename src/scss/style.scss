@@ -5,7 +5,7 @@
     --background-color-1: rgb(255, 255, 255);
     --background-color-2: rgb(245, 245, 245);
     --theme-color: rgb(40, 40, 40);
-    --error-color: #9c1c1c;
+    --error-color: rgb(156, 28, 28);
     --font-family: 'Poppins', sans-serif;
     --font-family-2: 'Cinzel', serif;
     --transition: .3s;
@@ -1429,7 +1429,7 @@ html {
                 margin: 15px;
 
                 input.err, textarea.err {
-                    border: 1px solid var(--error-color);
+                    border-color: var(--error-color);
                     caret-color: var(--error-color);
                 }
 
@@ -1439,13 +1439,12 @@ html {
                     font-family: var(--font-family);
                     font-weight: 400;
                     letter-spacing: 1px;
-                    padding: 15px;
+                    padding: 10px;
                     border: none;
                     outline: none;
                     resize: none;
                     background-color: var(--background-color-1);
-                    border: 1px solid var(--primary-color);
-                    border-radius: var(--border-radius);
+                    border-bottom: 1px solid var(--primary-color);
                     caret-color: var(--primary-color);
 
                     &:focus {
@@ -1461,6 +1460,7 @@ html {
                 input {
                     height: 55px;
                     width: 300px;
+                    padding-left: 45px;
                 }
 
                 textarea {
@@ -1470,8 +1470,8 @@ html {
 
                 label {
                     pointer-events: none;
-                    padding: 0 5px;
                     position: absolute;
+                    padding-right: 5px;
                     font-family: var(--font-family);
                     font-weight: 400;
                     color: var(--primary-color);
@@ -1491,12 +1491,32 @@ html {
                 }
 
                 label.notValid {
+                    left: 45px;
+                    top: 15px;
+                    font-size: 17px;
+                }
+
+                #messageLabel.notValid {
                     left: 15px;
                     top: 15px;
                     font-size: 17px;
                 }
 
                 label.err {
+                    color: var(--error-color);
+                }
+
+                i {
+                    pointer-events: none;
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: var(--primary-color);
+                    font-size: 17px;
+                }
+
+                i.err {
                     color: var(--error-color);
                 }
 
