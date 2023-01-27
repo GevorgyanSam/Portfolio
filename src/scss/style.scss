@@ -1507,9 +1507,6 @@ html {
                     color: var(--primary-color);
                     letter-spacing: 1px;
                     background-color: var(--background-color-1);
-                    left: 15px;
-                    top: 15px;
-                    font-size: 17px;
                     transition: var(--transition);
                     border-radius: var(--border-radius);
                 }
@@ -1551,7 +1548,6 @@ html {
                 }
 
                 #submit {
-                    margin-top: 10px;
                     border-radius: var(--border-radius);
                     padding: 9px 23px;
                     font-size: 17px;
@@ -1614,7 +1610,7 @@ html {
         }
 
         .contactInfoParent {
-            margin: 0 60px;
+            margin-left: 60px;
 
             > div {
                 margin-top: 22px;
