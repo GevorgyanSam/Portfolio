@@ -2437,7 +2437,7 @@
                     label.valid {
                         left: 10px !important;
                         top: -12px !important;
-                        font-size: 16px !important;
+                        font-size: 15px !important;
                     }
     
                     label.notValid {
@@ -2473,6 +2473,260 @@
 
         .contactContentParent .contactFormParent .formItem textarea {
             height: 150px !important;
+        }
+    }
+
+}
+
+@media only screen and  (max-width: 650px)  {
+
+    .contactParent {
+
+        .contactContentParent {
+
+            .contactFormParent {
+
+                .formItem {
+
+                    input {
+                        font-size: 16px !important;
+                    }
+    
+                    textarea {
+                        font-size: 16px !important;
+                    }
+
+                    label.valid {
+                        font-size: 14px !important;
+                    }
+    
+                    label.notValid {
+                        font-size: 16px !important;
+                    }
+
+                    i {
+                        font-size: 16px !important;
+                    }
+
+                    #submit {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and  (max-width: 600px)  {
+
+    .contactParent {
+        min-height: 744px !important;
+
+        .contactContentParent {
+            margin-top: 20px !important;
+
+            .contactFormParent {
+
+                .contactForm {
+                    display: block !important;
+                    margin: 0 !important;
+                }
+
+                .formItem {
+                    margin-top: 30px !important;
+
+                    input {
+                        height: 50px !important;
+                        font-size: 17px !important;
+                        padding-left: 43px !important;
+                    }
+    
+                    textarea {
+                        height: 150px !important;
+                        font-size: 17px !important;
+                    }
+
+                    label.valid {
+                        left: 10px !important;
+                        top: -12px !important;
+                        font-size: 15px !important;
+                    }
+    
+                    label.notValid {
+                        left: 43px !important;
+                        top: 13px !important;
+                        font-size: 17px !important;
+                    }
+
+                    #messageLabel.notValid {
+                        left: 15px !important;
+                    }
+
+                    i {
+                        left: 15px !important;
+                        font-size: 17px !important;
+                    }
+
+                    #submit {
+                        padding: 7px 22px !important;
+                        font-size: 17px !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and  (max-width: 470px)  {
+
+    .contactParent {
+        min-height: 635px !important;
+
+        .contactContentParent {
+            margin-top: 20px !important;
+
+            .contactFormParent {
+
+                .formItem {
+                    margin-top: 25px !important;
+
+                    input {
+                        height: 45px !important;
+                        font-size: 16px !important;
+                        padding-left: 43px !important;
+                    }
+    
+                    textarea {
+                        height: 140px !important;
+                        font-size: 16px !important;
+                    }
+
+                    label.valid {
+                        left: 10px !important;
+                        top: -12px !important;
+                        font-size: 14px !important;
+                    }
+    
+                    label.notValid {
+                        left: 43px !important;
+                        top: 10px !important;
+                        font-size: 16px !important;
+                    }
+
+                    #messageLabel.notValid {
+                        left: 15px !important;
+                    }
+
+                    i {
+                        left: 15px !important;
+                        font-size: 16px !important;
+                    }
+
+                    #submit {
+                        padding: 5px 18px !important;
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and  (max-width: 370px)  {
+
+    .contactParent {
+        min-height: 610px !important;
+
+        .contactContentParent {
+
+            .contactFormParent {
+
+                .formItem {
+
+                    input {
+                        font-size: 15px !important;
+                        padding-left: 43px !important;
+                    }
+    
+                    textarea {
+                        font-size: 15px !important;
+                    }
+
+                    label.valid {
+                        font-size: 13px !important;
+                    }
+    
+                    label.notValid {
+                        left: 43px !important;
+                        font-size: 15px !important;
+                    }
+
+                    #messageLabel.notValid {
+                        left: 15px !important;
+                    }
+
+                    i {
+                        left: 15px !important;
+                        font-size: 15px !important;
+                    }
+
+                    #submit {
+                        padding: 5px 18px !important;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and  (max-width: 300px)  {
+
+    .contactParent {
+
+        .contactContentParent {
+
+            .contactFormParent {
+
+                .formItem {
+
+                    input {
+                        font-size: 14px !important;
+                        padding-left: 43px !important;
+                    }
+    
+                    textarea {
+                        font-size: 14px !important;
+                    }
+
+                    label.valid {
+                        font-size: 12px !important;
+                    }
+    
+                    label.notValid {
+                        left: 43px !important;
+                        font-size: 14px !important;
+                    }
+
+                    #messageLabel.notValid {
+                        left: 15px !important;
+                    }
+
+                    i {
+                        left: 15px !important;
+                        font-size: 14px !important;
+                    }
+
+                    #submit {
+                        padding: 5px 18px !important;
+                        font-size: 14px !important;
+                    }
+                }
+            }
         }
     }
 

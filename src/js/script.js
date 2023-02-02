@@ -390,7 +390,6 @@ $(document).ready(function() {
 
         form.submit.click(function(e) {
             e.preventDefault();
-            alert($("#contact").height());
         })
 
     }
