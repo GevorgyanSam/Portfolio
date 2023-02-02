@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     $(window).mousemove((e) => {
 
-        if($(this).width() > 1000) {
+        if($(this).width() > 1100) {
 
             let cursor = $(".mouse");
             let x = e.pageX;
@@ -278,7 +278,7 @@ $(document).ready(function() {
 
     function worksContentHover() {
 
-        if($(window).width() > 1000) {
+        if($(window).width() > 1100) {
 
             const worksContent = {
                 content: $(".worksImageParent"),
@@ -390,6 +390,7 @@ $(document).ready(function() {
 
         form.submit.click(function(e) {
             e.preventDefault();
+            alert($("#contact").height());
         })
 
     }
