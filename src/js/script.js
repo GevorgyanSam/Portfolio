@@ -194,7 +194,7 @@ $(document).ready(function() {
 
     themeFunc();
 
-    // This Function is for Changing Color
+    // This Function is for Opening Settings Menu
 
     function openFunc() {
 
@@ -202,6 +202,17 @@ $(document).ready(function() {
             gearIcon: $(".settingsBtn"),
             settingsParent: $(".settingsParent"),
         }
+
+        $(window).click(function(e) {
+
+            let className = e.target.className;
+
+            if(className != "settingsBtn" && className != "fa-solid fa-gear") {
+                gear.settingsParent.removeClass("close");
+                gear.settingsParent.addClass("open");
+            }
+
+        })
 
         gear.gearIcon.click(function() {
 
@@ -237,11 +248,6 @@ $(document).ready(function() {
 
     function changeColorFunc(color) {
 
-        const gear = {
-            gearIcon: $(".settingsBtn"),
-            settingsParent: $(".settingsParent"),
-        }
-
         color.click(function() {
             let int = color.attr("class");
             int = int["13"];
@@ -252,9 +258,6 @@ $(document).ready(function() {
                 }
                 $("body").addClass("color-" + int);
             }
-        
-            gear.settingsParent.removeClass("close");
-            gear.settingsParent.addClass("open");
 
         })
 
