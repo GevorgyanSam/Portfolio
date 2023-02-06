@@ -415,21 +415,21 @@ $(document).ready(function() {
 
             if(form.name.valid && form.lastName.valid && form.email.valid && form.subject.valid && form.message.valid) {
 
-                // $.ajax({
-                //     url: "validate.php",
-                //     method: "POST",
-                //     datatype: "html",
-                //     data: {
-                //         "name": form.name.inp.val(),
-                //         "lastName": form.lastName.inp.val(),
-                //         "email": form.email.inp.val(),
-                //         "subject": form.subject.inp.val(),
-                //         "message": form.message.inp.val(),
-                //     },
-                //     success: function(data) {
-                //         console.log(data);
-                //     },
-                // })
+                $.ajax({
+                    url: "validate.php",
+                    method: "POST",
+                    datatype: "html",
+                    data: {
+                        "name": form.name.inp.val(),
+                        "lastName": form.lastName.inp.val(),
+                        "email": form.email.inp.val(),
+                        "subject": form.subject.inp.val(),
+                        "message": form.message.inp.val(),
+                    },
+                    success: function(data) {
+                        console.log(data);
+                    },
+                })
 
             }
             
