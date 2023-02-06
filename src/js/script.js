@@ -333,27 +333,40 @@ $(document).ready(function() {
     // This Function is For Contact Section
 
     function contact() {
+        
+        let date = new Date();
+        let currentYear = date.getFullYear();
+        $(".currentYear").text(currentYear);
 
         const form = {
             name: {
                 inp: $("#name"),
                 label: $("#nameLabel"),
+                icon: $("#nameLabel + i"),
+                valid: false,
             },
             lastName: {
                 inp: $("#lastName"),
                 label: $("#lastNameLabel"),
+                icon: $("#lastNameLabel + i"),
+                valid: false,
             },
             email: {
                 inp: $("#email"),
                 label: $("#emailLabel"),
+                icon: $("#emailLabel + i"),
+                valid: false,
             },
             subject: {
                 inp: $("#subject"),
                 label: $("#subjectLabel"),
+                icon: $("#subjectLabel + i"),
+                valid: false,
             },
             message: {
                 inp: $("#message"),
                 label: $("#messageLabel"),
+                valid: false,
             },
             submit: $("#submit"),
         }
@@ -392,13 +405,137 @@ $(document).ready(function() {
         labelFocus(form.subject.inp, form.subject.label);
         labelFocus(form.message.inp, form.message.label);
 
-        form.submit.click(function(e) {
-            e.preventDefault();
+        form.submit.click(function() {
+
+            checkValid(form.name.inp.val(), "name");
+            checkValid(form.lastName.inp.val(), "lastName");
+            checkValid(form.email.inp.val(), "email");
+            checkValid(form.subject.inp.val(), "subject");
+            checkValid(form.message.inp.val(), "message");
+
+            if(form.name.valid && form.lastName.valid && form.email.valid && form.subject.valid && form.message.valid) {
+
+                // $.ajax({
+                //     url: "validate.php",
+                //     method: "POST",
+                //     datatype: "html",
+                //     data: {
+                //         "name": form.name.inp.val(),
+                //         "lastName": form.lastName.inp.val(),
+                //         "email": form.email.inp.val(),
+                //         "subject": form.subject.inp.val(),
+                //         "message": form.message.inp.val(),
+                //     },
+                //     success: function(data) {
+                //         console.log(data);
+                //     },
+                // })
+
+            }
+            
         })
 
-        let date = new Date();
-        let currentYear = date.getFullYear();
-        $(".currentYear").text(currentYear);
+        function checkValid(value, name) {
+
+            let trim = value.trim();
+
+            if(name == "name") {
+
+                if(trim.length == 0) {
+                    form.name.inp.val("");
+                    form.name.label.text("Enter Name");
+                    form.name.inp.addClass("err");
+                    form.name.label.addClass("err");
+                    form.name.icon.addClass("err");
+                } else {
+                    form.name.label.text("Name");
+                    form.name.inp.removeAttr("class");
+                    form.name.label.removeClass("err");
+                    form.name.icon.removeClass("err");
+                    form.name.valid = true;
+                }
+
+            }
+
+            if(name == "lastName") {
+
+                if(trim.length == 0) {
+                    form.lastName.inp.val("");
+                    form.lastName.label.text("Enter Last Name");
+                    form.lastName.inp.addClass("err");
+                    form.lastName.label.addClass("err");
+                    form.lastName.icon.addClass("err");
+                } else {
+                    form.lastName.label.text("Last Name");
+                    form.lastName.inp.removeAttr("class");
+                    form.lastName.label.removeClass("err");
+                    form.lastName.icon.removeClass("err");
+                    form.lastName.valid = true;
+                }
+
+            }
+
+            if(name == "email") {
+
+                if(trim.length == 0) {
+                    form.email.inp.val("");
+                    form.email.label.text("Enter Email");
+                    form.email.inp.addClass("err");
+                    form.email.label.addClass("err");
+                    form.email.icon.addClass("err");
+                } else {
+                    if(trim.includes("@")) {
+                        form.email.label.text("Email");
+                        form.email.inp.removeAttr("class");
+                        form.email.label.removeClass("err");
+                        form.email.icon.removeClass("err");
+                        form.email.valid = true;
+                    } else {
+                        form.email.label.text("Enter Valide Email");
+                        form.email.inp.addClass("err");
+                        form.email.label.addClass("err");
+                        form.email.icon.addClass("err");
+                        form.email.valid = false;
+                    }
+                }
+
+            }
+
+            if(name == "subject") {
+
+                if(trim.length == 0) {
+                    form.subject.inp.val("");
+                    form.subject.label.text("Enter Subject");
+                    form.subject.inp.addClass("err");
+                    form.subject.label.addClass("err");
+                    form.subject.icon.addClass("err");
+                } else {
+                    form.subject.label.text("Subject");
+                    form.subject.inp.removeAttr("class");
+                    form.subject.label.removeClass("err");
+                    form.subject.icon.removeClass("err");
+                    form.subject.valid = true;
+                }
+
+            }
+
+            if(name == "message") {
+
+                if(trim.length == 0) {
+                    form.message.inp.val("");
+                    form.message.label.text("Enter Message");
+                    form.message.inp.addClass("err");
+                    form.message.label.addClass("err");
+                } else {
+                    form.message.label.text("Message");
+                    form.message.inp.removeAttr("class");
+                    form.message.label.removeClass("err");
+                    form.message.valid = true;
+                }
+
+            }
+
+        }
 
     }
 
