@@ -2731,3 +2731,166 @@
     }
 
 }
+
+
+
+// ----- ----- ----- ------ ----- ----- -----
+// ----- ----- ----- Footer ----- ----- -----
+// ----- ----- ----- ------ ----- ----- -----
+
+
+
+@media only screen and (max-width: 1500px) {
+
+    .footerParent {
+        padding: 40px 0 25px !important;
+    
+        .backToTop div {
+            font-size: 17px !important;
+        }
+    
+        .footerContent {
+            margin: 15px 0 !important;
+            gap: 20px !important;
+    
+            .content {
+    
+                i {
+                    font-size: 17px !important;
+                }
+            }
+        }
+    
+        .copyright {
+
+            div span {
+                font-size: 17px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .footerParent {
+        padding: 35px 0 20px !important;
+    
+        .backToTop div {
+            font-size: 16px !important;
+        }
+    
+        .footerContent {
+            margin: 15px 0 !important;
+            gap: 20px !important;
+    
+            .content {
+    
+                i {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    
+        .copyright {
+
+            div span {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+    .footerParent {
+        padding: 30px 0 20px !important;
+    
+        .backToTop div {
+            font-size: 15px !important;
+        }
+    
+        .footerContent {
+            margin: 12px 0 !important;
+            gap: 20px !important;
+    
+            .content {
+    
+                i {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    
+        .copyright {
+
+            div span {
+                font-size: 15px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+
+    .footerParent {
+        padding: 25px 0 20px !important;
+    
+        .backToTop div {
+            font-size: 14px !important;
+        }
+    
+        .footerContent {
+            margin: 10px 0 !important;
+            gap: 20px !important;
+    
+            .content {
+    
+                i {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    
+        .copyright {
+
+            div span {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    .footerParent {
+        padding: 20px 0 !important;
+    
+        .backToTop div {
+            font-size: 13px !important;
+        }
+    
+        .footerContent {
+            margin: 9px 0 !important;
+            gap: 18px !important;
+    
+            .content {
+    
+                i {
+                    font-size: 13px !important;
+                }
+            }
+        }
+    
+        .copyright {
+
+            div span {
+                font-size: 13px !important;
+            }
+        }
+    }
+
+}

@@ -12,6 +12,7 @@ $(document).ready(function() {
         ScrollAnimation($("#skills"), $("#skillsAnimationParent"));
         ScrollAnimation($("#works"), $("#worksAnimationParent"));
         ScrollAnimation($("#contact"), $("#contactAnimationParent"));
+        ScrollAnimation($("#contact"), $(".footerAnimationParent"));
 
     })
 
@@ -394,6 +395,10 @@ $(document).ready(function() {
         form.submit.click(function(e) {
             e.preventDefault();
         })
+
+        let date = new Date();
+        let currentYear = date.getFullYear();
+        $(".currentYear").text(currentYear);
 
     }
 
