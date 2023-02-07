@@ -41,7 +41,17 @@
 
     if(!empty($name) && !empty($lastName) && !empty($email) && !empty($subject) && !empty($message)) {
 
-        echo("Message sent successfully \n");
+        $to = "gsamvel2005@gmail.com";
+        $headers = "From: $email \r\n";
+        $headers .= "$name $lastName \r\n";
+        $headers .= "Reply-To $email \r\n";
+        $result = mail($to, $subject, $message, $headers);
+
+        if($result) {
+            echo("Message sent successfully \n");
+        } else {
+            echo("Something Went Wrong \n");
+        }
 
     }
 

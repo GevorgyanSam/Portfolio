@@ -405,7 +405,9 @@ $(document).ready(function() {
         labelFocus(form.subject.inp, form.subject.label);
         labelFocus(form.message.inp, form.message.label);
 
-        form.submit.click(function() {
+        form.submit.click(function(e) {
+
+            e.preventDefault();
 
             checkValid(form.name.inp.val(), "name");
             checkValid(form.lastName.inp.val(), "lastName");

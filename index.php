@@ -403,41 +403,43 @@
                     </div>
                     <div class="contactContentParent">
                         <div class="contactFormParent">
-                            <div class="contactForm">
-                                <div class="formItem formItem1">
-                                    <input type="text" id="name" autocomplete="off">
-                                    <label for="name" id="nameLabel" class="notValid">Name</label>
-                                    <i class="fa-regular fa-user"></i>
+                            <form autocomplete="off" method="POST">
+                                <div class="contactForm">
+                                    <div class="formItem formItem1">
+                                        <input type="text" id="name" autocomplete="off">
+                                        <label for="name" id="nameLabel" class="notValid">Name</label>
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="formItem formItem2">
+                                        <input type="text" id="lastName" autocomplete="off">
+                                        <label for="lastName" id="lastNameLabel" class="notValid">Last Name</label>
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
                                 </div>
-                                <div class="formItem formItem2">
-                                    <input type="text" id="lastName" autocomplete="off">
-                                    <label for="lastName" id="lastNameLabel" class="notValid">Last Name</label>
-                                    <i class="fa-regular fa-user"></i>
+                                <div class="contactForm">
+                                    <div class="formItem formItem3">
+                                        <input type="email" id="email" autocomplete="off">
+                                        <label for="email" id="emailLabel" class="notValid">Email</label>
+                                        <i class="fa-solid fa-at"></i>
+                                    </div>
+                                    <div class="formItem formItem4">
+                                        <input type="text" id="subject" autocomplete="off" class="notValid">
+                                        <label for="subject" id="subjectLabel" class="notValid">Subject</label>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="contactForm">
-                                <div class="formItem formItem3">
-                                    <input type="email" id="email" autocomplete="off">
-                                    <label for="email" id="emailLabel" class="notValid">Email</label>
-                                    <i class="fa-solid fa-at"></i>
+                                <div class="contactForm">
+                                    <div class="formItem formItem5">
+                                        <textarea id="message" autocomplete="off"></textarea>
+                                        <label for="message" id="messageLabel" class="notValid">Message</label>
+                                    </div>
                                 </div>
-                                <div class="formItem formItem4">
-                                    <input type="text" id="subject" autocomplete="off" class="notValid">
-                                    <label for="subject" id="subjectLabel" class="notValid">Subject</label>
-                                    <i class="fa-regular fa-envelope"></i>
+                                <div class="contactForm">
+                                    <div class="formItem formItem6">
+                                        <button type="submit" id="submit">Send Message</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="contactForm">
-                                <div class="formItem formItem5">
-                                    <textarea id="message" autocomplete="off"></textarea>
-                                    <label for="message" id="messageLabel" class="notValid">Message</label>
-                                </div>
-                            </div>
-                            <div class="contactForm">
-                                <div class="formItem formItem6">
-                                    <button type="submit" id="submit">Send Message</button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                         <div class="contactInfoParent">
                             <div>
