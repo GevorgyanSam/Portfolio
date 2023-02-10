@@ -3,6 +3,7 @@
 
 :root {
     --background-color-1: rgb(255, 255, 255);
+    --success-background-color: rgb(255, 255, 255, .5);
     --background-color-2: rgb(245, 245, 245);
     --theme-color: rgb(40, 40, 40);
     --error-color: rgb(156, 28, 28);
@@ -57,6 +58,7 @@ body.color-5 {
 }
 
 body.dark {
+    --success-background-color: rgb(24, 24, 35, .5);
     --background-color-1: rgb(24, 24, 35);
     --background-color-2: rgb(29, 29, 40);
     --theme-color: rgb(210, 210, 210);
@@ -1399,6 +1401,60 @@ html {
 
     #contactAnimationParent {
         display: none;
+    }
+
+    .successParent {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999999;
+        display: none;
+        place-items: center;
+        background-color: var(--success-background-color);
+        backdrop-filter: blur(2px);
+        opacity: 0;
+        animation: successAnim var(--animation-duration) forwards;
+
+        @keyframes successAnim {
+
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+        .success {
+            display: grid;
+            place-items: center;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            i {
+                color: var(--primary-color);
+                font-size: 60px;
+            }
+
+            h3 {
+                text-align: center;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                color: var(--primary-color);
+                font-size: 35px;
+                font-family: var(--font-family);
+                font-weight: 400;
+            }
+        }
     }
 
     .contactContentParent {

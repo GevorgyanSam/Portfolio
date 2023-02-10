@@ -429,7 +429,47 @@ $(document).ready(function() {
                         "message": form.message.inp.val(),
                     },
                     success: function(data) {
-                        console.log(data);
+                        if(data.length > 0) {
+                            let randomInt = Math.round(Math.random() * 2);
+                            if(randomInt == 1) {
+                                $(".firstCheck").css({
+                                    display: "none",
+                                })
+                                $(".secondCheck").css({
+                                    display: "block",
+                                })
+                            } else {
+                                $(".secondCheck").css({
+                                    display: "none",
+                                })
+                                $(".firstCheck").css({
+                                    display: "block",
+                                })
+                            }
+                            $(".successParent").css({
+                                display: "grid",
+                            })
+                             setTimeout(function() {
+                                $(".successParent").css({
+                                    display: "none",
+                                })
+                                form.name.inp.val("");
+                                form.name.label.removeClass("valid");
+                                form.name.label.addClass("notValid");
+                                form.lastName.inp.val("");
+                                form.lastName.label.removeClass("valid");
+                                form.lastName.label.addClass("notValid");
+                                form.email.inp.val("");
+                                form.email.label.removeClass("valid");
+                                form.email.label.addClass("notValid");
+                                form.subject.inp.val("");
+                                form.subject.label.removeClass("valid");
+                                form.subject.label.addClass("notValid");
+                                form.message.inp.val("");
+                                form.message.label.removeClass("valid");
+                                form.message.label.addClass("notValid");
+                            }, 2500)
+                        }
                     },
                 })
 

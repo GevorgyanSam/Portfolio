@@ -401,6 +401,15 @@
                         <h2>get in touch</h2>
                         <h1>contact <span>me</span></h1>
                     </div>
+                    <div class="successParent">
+                        <div class="success">
+                            <div>
+                                <i class="fa-solid fa-user-check firstCheck"></i>
+                                <i class="fa-solid fa-envelope-circle-check secondCheck"></i>
+                                <h3>Message Sent Successfuly</h3>
+                            </div>
+                        </div>
+                    </div>
                     <div class="contactContentParent">
                         <div class="contactFormParent">
                             <form autocomplete="off" method="POST">
