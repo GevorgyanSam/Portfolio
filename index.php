@@ -1,3 +1,6 @@
+<?php require("connection/connect.php") ?>
+<?php require("get_info.php") ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -414,6 +417,7 @@
                         <div class="contactFormParent">
                             <form autocomplete="off" method="POST">
                                 <div class="contactForm">
+                                    <input type="hidden" id="guestId" value="<?=$guest_id?>">
                                     <div class="formItem formItem1">
                                         <input type="text" id="name" autocomplete="off">
                                         <label for="name" id="nameLabel" class="notValid">Name</label>

@@ -339,6 +339,7 @@ $(document).ready(function() {
         $(".currentYear").text(currentYear);
 
         const form = {
+            guestId: $("#guestId"),
             name: {
                 inp: $("#name"),
                 label: $("#nameLabel"),
@@ -422,6 +423,7 @@ $(document).ready(function() {
                     method: "POST",
                     datatype: "html",
                     data: {
+                        "guestId": form.guestId.val(),
                         "name": form.name.inp.val(),
                         "lastName": form.lastName.inp.val(),
                         "email": form.email.inp.val(),

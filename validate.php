@@ -1,6 +1,15 @@
+<?php require("connection/connect.php") ?>
+
 <?php
 
-    $name = $lastName = $email = $subject = $message = "";
+    $guestId = $name = $lastName = $email = $subject = $message = "";
+
+    if(!empty($_POST["guestId"])) {
+        $guestId = $_POST["guestId"];
+        $guestId = trim($guestId);
+        $guestId = htmlspecialchars($guestId);
+        $guestId = stripslashes($guestId);
+    }
 
     if(!empty($_POST["name"])) {
         $name = $_POST["name"];
@@ -39,19 +48,15 @@
         $message = stripslashes($message);
     }
 
-    if(!empty($name) && !empty($lastName) && !empty($email) && !empty($subject) && !empty($message)) {
+    if(!empty($guestId) && !empty($name) && !empty($lastName) && !empty($email) && !empty($subject) && !empty($message)) {
 
         $to = "gsamvel2005@gmail.com";
         $headers = "From: $email \r\n";
         $headers .= "$name $lastName \r\n";
+        $headers .= "Information ID $guestId \r\n";
         $headers .= "Reply-To $email \r\n";
         $result = mail($to, $subject, $message, $headers);
-
-        if($result) {
-            echo("Message sent successfully \n");
-        } else {
-            echo("Something Went Wrong \n");
-        }
+        $result = mysqli_query($conn, "UPDATE `guests` SET `guest_status` = 'Verified' WHERE `guests`.`guest_id` = '$guestId'");
 
     }
 
