@@ -2,6 +2,39 @@
 
 $(document).ready(function() {
 
+    // This Function To Remember The Theme
+
+    function Theme() {
+
+        let body = $("body");
+        const settings = {
+            themeBtn: $(".themeParent"),
+            themeIcon: $(".themeParent i"),
+        };
+
+        if(localStorage.getItem("theme") == null) {
+            localStorage.setItem("theme", "light");
+        } else if(localStorage.getItem("theme") == "dark") {
+            $("body").addClass("dark");
+            settings.themeIcon.removeClass("fa-moon");
+            settings.themeIcon.addClass("fa-sun");
+        }
+        
+        let ThemeColor = localStorage.getItem("theme-color");
+
+        if(ThemeColor == null) {
+            localStorage.setItem("theme-color", "color-1");
+        } else {
+            for(let i = 1; i <= 5; i++) {
+                body.removeClass(`color-${i}`);
+            }
+            body.addClass(ThemeColor);
+        }
+
+    }
+
+    Theme()
+
     // All The Scroll Functions
 
     $(window).scroll(function() {
@@ -180,10 +213,12 @@ $(document).ready(function() {
         settings.themeBtn.click(function() {
             
             if($("body").hasClass("dark")) {
+                localStorage.setItem("theme", "light");
                 $("body").removeClass("dark");
                 settings.themeIcon.removeClass("fa-sun");
                 settings.themeIcon.addClass("fa-moon");
             } else {
+                localStorage.setItem("theme", "dark");
                 $("body").addClass("dark");
                 settings.themeIcon.removeClass("fa-moon");
                 settings.themeIcon.addClass("fa-sun");
@@ -258,6 +293,7 @@ $(document).ready(function() {
                     $("body").removeClass("color-" + i);
                 }
                 $("body").addClass("color-" + int);
+                localStorage.setItem("theme-color", `color-${int}`);
             }
 
         })
