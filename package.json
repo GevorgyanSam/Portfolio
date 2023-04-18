@@ -1,0 +1,40 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Official Portfolio",
+	"main": "gulpfile.js",
+	"scripts": {
+		"watch": "gulp watch",
+		"build": "gulp build",
+		"dev": "gulp dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GevorgyanSam/Portfolio.git"
+	},
+	"keywords": [
+		"Portfolio",
+		"CV",
+		"Samvel Gevorgyan",
+		"WEB"
+	],
+	"author": "Samvel Gevorgyan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GevorgyanSam/Portfolio/issues"
+	},
+	"homepage": "https://github.com/GevorgyanSam/Portfolio",
+	"type": "module",
+	"devDependencies": {
+		"del": "^7.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-uglify": "^3.0.2",
+		"sass": "^1.62.0"
+	}
+}

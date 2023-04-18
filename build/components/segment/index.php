@@ -1,4 +1,4 @@
-<?php require("connection/connect.php") ?>
+<?php require("../connection/connect.php") ?>
 
 <?php
 

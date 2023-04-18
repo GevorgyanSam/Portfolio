@@ -1,5 +1,6 @@
-<?php require("connection/connect.php") ?>
-<?php require("get_info.php") ?>
+<?php require("./components/error/error.php") ?>
+<?php require("./components/connection/connect.php") ?>
+<?php require("./components/segment/get_info.php") ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +13,7 @@
     <meta name="subject" content="Portfolio">
     <meta name="keywords" content="Portfolio, CV, Samvel, Gevorgyan, WEB, Front, Back, Front-End, Back-End, Developer">
     <link rel="icon" href="img/Sam.png">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Samvel Gevorgyan</title>
 </head>
 <body class="color-1">
@@ -569,7 +568,6 @@
             </div>
         </section>
     </footer>
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

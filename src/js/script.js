@@ -419,7 +419,7 @@ $(document).ready(function() {
             if(form.name.valid && form.lastName.valid && form.email.valid && form.subject.valid && form.message.valid) {
 
                 $.ajax({
-                    url: "validate.php",
+                    url: "./components/segment/index.php",
                     method: "POST",
                     datatype: "html",
                     data: {

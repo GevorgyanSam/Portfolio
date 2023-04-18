@@ -1,29 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-
-:root {
-    --background-color-1: rgb(255, 255, 255);
-    --success-background-color: rgb(255, 255, 255, .5);
-    --background-color-2: rgb(245, 245, 245);
-    --theme-color: rgb(40, 40, 40);
-    --error-color: rgb(156, 28, 28);
-    --font-family: 'Poppins', sans-serif;
-    --font-family-2: 'Cinzel', serif;
-    --transition: .3s;
-    --border-radius: 10px;
-    --animation-duration: .7s;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    list-style: none;
-    user-select: none;
-    transition: var(--transition);
-}
+@import url("./components/variables.scss");
+@import url("./components/reset.scss");
 
 ::-webkit-scrollbar {
     background-color: var(--background-color-1);
@@ -71,10 +49,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .mouse {
@@ -1852,3 +1826,13 @@ html {
         }
     }
 }
+
+
+
+// ----- ------ ----- ------- ----- ------ 
+// ----- ------ Media Queries ----- ------
+// ----- ------ ----- ------- ----- ------
+
+
+
+@import "./components/media.scss";
