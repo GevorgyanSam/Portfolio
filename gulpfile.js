@@ -13,7 +13,7 @@ const sass = gulpSass(dartSass);
 
 async function styles() {
 
-    return gulp.src(["./src/scss/*.scss", "./src/lib/*.css"])
+    return gulp.src(["./src/lib/*.css", "./src/scss/*.scss"])
         .pipe(sass().on("error", sass.logError))
         .pipe(gcmq())
         .pipe(autoPrefixer({
@@ -61,7 +61,7 @@ async function imgages() {
 
 async function clean() {
 
-    return deleteAsync(["./build/js/", "./build/css/", "./build/img/", "./build/components/"])
+    return deleteAsync(["./build/js/", "./build/css/", "./build/img/", "./build/components/", "./build/*.php"])
 
 }
 
