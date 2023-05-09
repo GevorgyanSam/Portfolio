@@ -51,17 +51,17 @@ async function databases() {
         .pipe(gulp.dest("./build/"))
 }
 
-async function imgages() {
+async function assets() {
 
-    return gulp.src("./src/img/*")
+    return gulp.src("./src/assets/*")
         .pipe(imagemin())
-        .pipe(gulp.dest("./build/img/"))
+        .pipe(gulp.dest("./build/assets/"))
 
 }
 
 async function clean() {
 
-    return deleteAsync(["./build/js/", "./build/css/", "./build/img/", "./build/components/", "./build/*.php"])
+    return deleteAsync(["./build/js/", "./build/css/", "./build/assets/", "./build/components/", "./build/*.php"])
 
 }
 
@@ -75,5 +75,5 @@ async function watch() {
 }
 
 gulp.task("watch", watch);
-gulp.task("build", gulp.series(clean, gulp.parallel(pages, styles, scripts, databases, imgages)));
+gulp.task("build", gulp.series(clean, gulp.parallel(pages, styles, scripts, databases, assets)));
 gulp.task("dev", gulp.series("build", "watch"));

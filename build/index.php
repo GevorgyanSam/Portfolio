@@ -12,7 +12,7 @@
     <meta name="description" content="Official Portfolio">
     <meta name="subject" content="Portfolio">
     <meta name="keywords" content="Portfolio, CV, Samvel, Gevorgyan, WEB, Front, Back, Front-End, Back-End, Developer">
-    <link rel="icon" href="img/Sam.png">
+    <link rel="icon" href="./assets/Sam.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Samvel Gevorgyan</title>
 </head>
@@ -33,7 +33,7 @@
         <div class="navParent">
             <div class="logoParent">
                 <div class="logo">
-                    <img src="img/Sam.png">
+                    <img src="./assets/Sam.jpg">
                 </div>
             </div>
             <div class="menuParent">
@@ -132,7 +132,7 @@
                     <p>this is my official portfolio website to shows all details and work experience web development</p>
                 </div>
                 <div class="imgParent">
-                    <img src="img/Sam.jpg">
+                    <img src="./assets/Sam.jpg">
                 </div>
             </div>
         </section>
@@ -176,7 +176,7 @@
                     <div class="aboutContentParent">
                         <div class="aboutImgParent">
                             <div class="aboutImg">
-                                <img src="img/Sam.jpg">
+                                <img src="./assets/Sam.jpg">
                             </div>
                         </div>
                         <div class="aboutContent">
@@ -330,7 +330,7 @@
                         <div class="worksContent">
                             <a href="https://github.com/GevorgyanSam/Photographer" target="_blank">
                                 <div class="worksImageParent">
-                                    <img src="img/project1.jpg">
+                                    <img src="./assets/project1.jpg">
                                 </div>
                                 <div>
                                     <h3>Photographer</h3>
@@ -341,7 +341,7 @@
                         <div class="worksContent">
                             <a href="https://github.com/GevorgyanSam/Fashion-Shop" target="_blank">
                                 <div class="worksImageParent">
-                                    <img src="img/project2.jpg">
+                                    <img src="./assets/project2.jpg">
                                 </div>
                                 <div>
                                     <h3>Fashion Shop</h3>
@@ -352,7 +352,7 @@
                         <div class="worksContent">
                             <a href="https://github.com/GevorgyanSam/Flash" target="_blank">
                                 <div class="worksImageParent">
-                                    <img src="img/project3.jpg">
+                                    <img src="./assets/project3.jpg">
                                 </div>
                                 <div>
                                     <h3>Flash</h3>
@@ -363,7 +363,7 @@
                         <div class="worksContent">
                             <a href="https://github.com/GevorgyanSam/Impossible-Bureau" target="_blank">
                                 <div class="worksImageParent">
-                                    <img src="img/project4.jpg">
+                                    <img src="./assets/project4.jpg">
                                 </div>
                                 <div>
                                     <h3>Impossible Bureau</h3>
@@ -372,20 +372,20 @@
                             </a>
                         </div>
                         <div class="worksContent">
-                            <a href="https://github.com/GevorgyanSam/Calculator" target="_blank">
+                            <a href="https://github.com/GevorgyanSam/VibeShare" target="_blank">
                                 <div class="worksImageParent">
-                                    <img src="img/project5.jpg">
+                                    <img src="./assets/project5.jpg">
                                 </div>
                                 <div>
-                                    <h3>Calculator</h3>
-                                    <p>Calculator.</p>
+                                    <h3>VibeShare</h3>
+                                    <p>Social Network.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="worksContent">
                             <a href="https://github.com/GevorgyanSam/DataBase" target="_blank">
                                 <div class="worksImageParent">
-                                    <img src="img/project6.jpg">
+                                    <img src="./assets/project6.jpg">
                                 </div>
                                 <div>
                                     <h3>Blog</h3>
