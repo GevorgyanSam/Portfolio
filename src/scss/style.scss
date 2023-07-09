@@ -989,12 +989,12 @@ body {
                     }
                 }
 
-                .html h2 {
+                .js h2 {
                     @include skills_text_animation(2.6s);
                 }
 
-                .html .progressbar {
-                    @include progressbar(95%);
+                .js .progressbar {
+                    @include progressbar(70%);
                     
                     &::after {
                         width: 0;
@@ -1008,18 +1008,18 @@ body {
                         }
 
                         100% {
-                            width: 95%;
+                            width: 70%;
                         }
 
                     }
                 }
 
-                .css h2 {
+                .php h2 {
                     @include skills_text_animation(2.7s);
                 }
 
-                .css .progressbar {
-                    @include progressbar(85%);
+                .php .progressbar {
+                    @include progressbar(75%);
                     
                     &::after {
                         width: 0;
@@ -1033,18 +1033,18 @@ body {
                         }
 
                         100% {
-                            width: 85%;
+                            width: 75%;
                         }
 
                     }
                 }
 
-                .js h2 {
+                .mysql h2 {
                     @include skills_text_animation(2.8s);
                 }
 
-                .js .progressbar {
-                    @include progressbar(70%);
+                .mysql .progressbar {
+                    @include progressbar(85%);
                     
                     &::after {
                         width: 0;
@@ -1058,18 +1058,18 @@ body {
                         }
 
                         100% {
-                            width: 70%;
+                            width: 85%;
                         }
 
                     }
                 }
 
-                .php h2 {
+                .git h2 {
                     @include skills_text_animation(2.9s);
                 }
 
-                .php .progressbar {
-                    @include progressbar(50%);
+                .git .progressbar {
+                    @include progressbar(90%);
                     
                     &::after {
                         width: 0;
@@ -1083,18 +1083,18 @@ body {
                         }
 
                         100% {
-                            width: 50%;
+                            width: 90%;
                         }
 
                     }
                 }
 
-                .mysql h2 {
+                .html h2 {
                     @include skills_text_animation(3s);
                 }
 
-                .mysql .progressbar {
-                    @include progressbar(85%);
+                .html .progressbar {
+                    @include progressbar(95%);
                     
                     &::after {
                         width: 0;
@@ -1108,18 +1108,18 @@ body {
                         }
 
                         100% {
-                            width: 85%;
+                            width: 95%;
                         }
 
                     }
                 }
 
-                .ajax h2 {
+                .laravel h2 {
                     @include skills_text_animation(3.1s);
                 }
 
-                .ajax .progressbar {
-                    @include progressbar(65%);
+                .laravel .progressbar {
+                    @include progressbar(75%);
                     
                     &::after {
                         width: 0;
@@ -1133,7 +1133,7 @@ body {
                         }
 
                         100% {
-                            width: 65%;
+                            width: 75%;
                         }
 
                     }
@@ -1189,12 +1189,12 @@ body {
                     }
                 }
 
-                .sass h2 {
+                .ajax h2 {
                     @include skills_text_animation(3.4s);
                 }
 
-                .sass .progressbar {
-                    @include progressbar(75%);
+                .ajax .progressbar {
+                    @include progressbar(65%);
                     
                     &::after {
                         width: 0;
@@ -1208,18 +1208,18 @@ body {
                         }
 
                         100% {
-                            width: 75%;
+                            width: 65%;
                         }
 
                     }
                 }
 
-                .git h2 {
+                .sass h2 {
                     @include skills_text_animation(3.5s);
                 }
 
-                .git .progressbar {
-                    @include progressbar(90%);
+                .sass .progressbar {
+                    @include progressbar(75%);
                     
                     &::after {
                         width: 0;
@@ -1233,7 +1233,7 @@ body {
                         }
 
                         100% {
-                            width: 90%;
+                            width: 75%;
                         }
 
                     }

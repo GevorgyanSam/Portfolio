@@ -181,7 +181,7 @@
                         </div>
                         <div class="aboutContent">
                             <h1>Hi, I'm <span>Samvel,</span> Based In Armenia</h1>
-                            <h2>I create successful responsive websites that are fast, easy to use. The main area of my expertise is front-end development, HTML, CSS, JS, building  medium web sites, features, animations.</h2>
+                            <h2>I am a full-stack web developer with expertise in both front-end and back-end technologies. I have extensive experience in creating successful and responsive websites that are fast, easy to use, and visually appealing.</h2>
                             <div class="dateParent">
                                 <div class="data">
                                     <p>Birthday:</p>
@@ -242,8 +242,8 @@
                                     <i class="fa-solid fa-code"></i>
                                 </div>
                                 <div class="child">
-                                    <h3>Technology</h3>
-                                    <p>combined all the latest technologies to a progressive website</p>
+                                    <h3>Functionality</h3>
+                                    <p>Combining the latest technological advances to optimize system performance</p>
                                 </div>
                             </div>
                             <div class="skillsContentChild">
@@ -259,14 +259,6 @@
                         <div class="progressParent">
                             <div class="progressChild">
                                 <div>
-                                    <div class="progress html">
-                                        <h2>html</h2>
-                                        <div class="progressbar"></div>
-                                    </div>
-                                    <div class="progress css">
-                                        <h2>css</h2>
-                                        <div class="progressbar"></div>
-                                    </div>
                                     <div class="progress js">
                                         <h2>js</h2>
                                         <div class="progressbar"></div>
@@ -279,10 +271,18 @@
                                         <h2>mysql</h2>
                                         <div class="progressbar"></div>
                                     </div>
+                                    <div class="progress git">
+                                        <h2>git / github</h2>
+                                        <div class="progressbar"></div>
+                                    </div>
+                                    <div class="progress html">
+                                        <h2>html / css</h2>
+                                        <div class="progressbar"></div>
+                                    </div>
                                 </div>
                                 <div>
-                                    <div class="progress ajax">
-                                        <h2>ajax</h2>
+                                    <div class="progress laravel">
+                                        <h2>laravel</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                     <div class="progress jquery">
@@ -293,12 +293,12 @@
                                         <h2>bootstrap</h2>
                                         <div class="progressbar"></div>
                                     </div>
-                                    <div class="progress sass">
-                                        <h2>sass / scss</h2>
+                                    <div class="progress ajax">
+                                        <h2>ajax</h2>
                                         <div class="progressbar"></div>
                                     </div>
-                                    <div class="progress git">
-                                        <h2>git / github</h2>
+                                    <div class="progress sass">
+                                        <h2>sass / scss</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                 </div>
