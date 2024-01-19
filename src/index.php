@@ -372,13 +372,13 @@
                             </a>
                         </div>
                         <div class="worksContent">
-                            <a href="https://github.com/GevorgyanSam/VibeShare" target="_blank">
+                            <a href="http://dvr.neanet.am:8080" target="_blank">
                                 <div class="worksImageParent">
                                     <img src="./assets/project5.jpg">
                                 </div>
                                 <div>
-                                    <h3>VibeShare</h3>
-                                    <p>Social Network.</p>
+                                    <h3>SpyBird</h3>
+                                    <p>Chat Application.</p>
                                 </div>
                             </a>
                         </div>
