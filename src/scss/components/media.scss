@@ -7,7 +7,7 @@
 
 
 
-@media only screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
 
     .navParent {
         
@@ -24,7 +24,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .navParent {
         justify-content: space-between !important;
@@ -51,7 +51,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .navParent {
 
@@ -66,7 +66,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
 
     .navParent {
 
@@ -81,7 +81,7 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 
     .navParent {
         height: 60px !important;
@@ -102,7 +102,7 @@
 
 }
 
-@media only screen and (max-width: 370px) {
+@media all and (max-width: 370px) {
 
     .navParent {
 
@@ -117,7 +117,7 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
 
     .navParent {
 
@@ -132,7 +132,7 @@
 
 }
 
-@media only screen and (max-width: 650px) {
+@media all and (max-width: 650px) {
 
     .mobileMenuParent {
 
@@ -154,7 +154,7 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 
     .mobileMenuParent {
 
@@ -175,7 +175,7 @@
 
 }
 
-@media only screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
 
     .mobileMenuParent {
 
@@ -197,7 +197,7 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
 
     .mobileMenuParent {
 
@@ -227,7 +227,7 @@
 
 
 
-@media only screen and (max-width: 1300px) {
+@media all and (max-width: 1300px) {
 
     .homeParent {
 
@@ -251,7 +251,7 @@
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
 
     .homeParent {
 
@@ -278,7 +278,7 @@
 
 }
 
-@media only screen and (max-width: 1100px) {
+@media all and (max-width: 1100px) {
 
     .homeParent {
 
@@ -289,7 +289,7 @@
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
 
     .homeParent {
         justify-content: flex-start !important;
@@ -320,7 +320,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .homeParent {
 
@@ -346,7 +346,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .homeParent {
         padding: 0 40px !important;
@@ -373,7 +373,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
 
     .homeParent {
 
@@ -387,7 +387,7 @@
 
 }
 
-@media only screen and (max-width: 550px) {
+@media all and (max-width: 550px) {
 
     .homeParent {
 
@@ -411,7 +411,7 @@
 
 }
 
-@media only screen and (max-width: 470px) {
+@media all and (max-width: 470px) {
 
     .homeParent {
         padding: 0 20px !important;
@@ -443,7 +443,7 @@
 
 }
 
-@media only screen and (max-width: 370px) {
+@media all and (max-width: 370px) {
 
     .homeParent {
         padding: 0 15px !important;
@@ -473,7 +473,7 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
 
     .homeParent {
 
@@ -497,7 +497,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .settingsParent.open {
         right: -240px !important;
@@ -525,7 +525,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .settingsParent.open {
         right: -215px !important;
@@ -553,7 +553,7 @@
 
 }
 
-@media only screen and (max-width: 550px) {
+@media all and (max-width: 550px) {
 
     .settingsParent.open {
         right: -200px !important;
@@ -581,7 +581,7 @@
 
 }
 
-@media only screen and (max-width: 320px) {
+@media all and (max-width: 320px) {
 
     .settingsParent.open {
         right: -172px !important;
@@ -617,7 +617,7 @@
 
 
 
-@media only screen and (max-width: 1700px) {
+@media all and (max-width: 1700px) {
 
     .aboutParent, .sectionWidthParent {
         padding: 70px 150px !important;
@@ -625,7 +625,7 @@
 
 }
 
-@media only screen and (max-width: 1600px) {
+@media all and (max-width: 1600px) {
 
     .aboutParent, .sectionWidthParent {
         padding: 70px 100px !important;
@@ -633,7 +633,7 @@
 
 }
 
-@media only screen and (max-width: 1500px) {
+@media all and (max-width: 1500px) {
 
     .aboutParent, .sectionWidthParent {
         padding: 70px 50px !important;
@@ -653,7 +653,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .aboutParent, .sectionWidthParent {
         
@@ -667,7 +667,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .aboutParent, .sectionWidthParent {
         padding: 50px 40px !important;
@@ -682,7 +682,7 @@
 
 }
 
-@media only screen and (max-width: 470px) {
+@media all and (max-width: 470px) {
 
     .allSectionParents {
         padding-top: 50px !important;
@@ -707,7 +707,7 @@
 
 }
 
-@media only screen and (max-width: 370px) {
+@media all and (max-width: 370px) {
 
     .aboutParent, .sectionWidthParent {
         padding: 25px 15px !important;
@@ -723,7 +723,7 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
 
     .aboutParent, .sectionWidthParent {
         padding: 25px 15px !important;
@@ -738,7 +738,7 @@
 
 }
 
-@media only screen and (max-width: 1400px) {
+@media all and (max-width: 1400px) {
 
     .aboutParent {
         min-height: 715px !important;
@@ -784,7 +784,7 @@
     
 }
 
-@media only screen and (max-width: 1230px) {
+@media all and (max-width: 1230px) {
 
     .aboutParent {
         min-height: 695px !important;
@@ -829,7 +829,7 @@
     
 }
 
-@media only screen and (max-width: 1100px) {
+@media all and (max-width: 1100px) {
 
     .aboutParent {
 
@@ -878,7 +878,7 @@
 
 }
 
-@media only screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
 
     .aboutParent {
 
@@ -924,7 +924,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .aboutParent {
 
@@ -970,7 +970,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .aboutParent {
 
@@ -1016,7 +1016,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
 
     .aboutParent {
 
@@ -1062,7 +1062,7 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 
     .aboutParent {
 
@@ -1108,7 +1108,7 @@
 
 }
 
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
 
     .aboutParent {
 
@@ -1129,7 +1129,7 @@
 
 }
 
-@media only screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
 
     .aboutParent {
 
@@ -1170,7 +1170,7 @@
 
 }
 
-@media only screen and (max-width: 350px) {
+@media all and (max-width: 350px) {
 
     .aboutParent {
 
@@ -1219,7 +1219,7 @@
 
 
 
-@media only screen and (max-width: 1500px) {
+@media all and (max-width: 1500px) {
 
     .skillsParent {
         min-height: 690px !important;
@@ -1273,7 +1273,7 @@
 
 }
 
-@media only screen and (max-width: 1400px) {
+@media all and (max-width: 1400px) {
 
     .skillsParent {
         min-height: 685px !important;
@@ -1333,7 +1333,7 @@
     
 }
 
-@media only screen and (max-width: 1300px) {
+@media all and (max-width: 1300px) {
 
     .skillsParent {
         min-height: 1020px !important;
@@ -1414,7 +1414,7 @@
     
 }
 
-@media only screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
 
     .skillsParent {
         min-height: 940px !important;
@@ -1484,7 +1484,7 @@
     
 }
 
-@media only screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
 
     .skillsParent {
         min-height: 950px !important;
@@ -1557,7 +1557,7 @@
     
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .skillsParent {
         min-height: 935px !important;
@@ -1630,7 +1630,7 @@
     
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .skillsParent {
         min-height: 825px !important;
@@ -1703,7 +1703,7 @@
     
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
 
     .skillsParent {
         min-height: 805px !important;
@@ -1777,7 +1777,7 @@
     
 }
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 
     .skillsParent {
         min-height: 1100px !important;
@@ -1851,7 +1851,7 @@
     
 }
 
-@media only screen and (max-width: 470px) {
+@media all and (max-width: 470px) {
 
     .skillsParent {
         min-height: 1050px !important;
@@ -1859,7 +1859,7 @@
 
 }
 
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
 
     .skillsParent {
         min-height: 960px !important;
@@ -1924,7 +1924,7 @@
 
 
 
-@media only screen and (max-width: 1700px) {
+@media all and (max-width: 1700px) {
 
     .worksParent {
         min-height: 950px !important;
@@ -1939,7 +1939,7 @@
 
 }
 
-@media only screen and (max-width: 1410px) {
+@media all and (max-width: 1410px) {
 
     .worksParent {
         min-height: 1420px !important;
@@ -1955,7 +1955,7 @@
 
 }
 
-@media only screen and (max-width: 1160px) {
+@media all and (max-width: 1160px) {
 
     .worksParent {
         min-height: 1330px !important;
@@ -1971,7 +1971,7 @@
 
 }
 
-@media only screen and (max-width: 1060px) {
+@media all and (max-width: 1060px) {
 
     .worksParent {
         min-height: 1200px !important;
@@ -1997,7 +1997,7 @@
 
 }
 
-@media only screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
 
     .worksParent {
         min-height: 1140px !important;
@@ -2013,7 +2013,7 @@
 
 }
 
-@media only screen and (max-width: 860px) {
+@media all and (max-width: 860px) {
 
     .worksParent {
         min-height: 100vh !important;
@@ -2039,7 +2039,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .worksParent {
 
@@ -2062,7 +2062,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .worksParent {
 
@@ -2078,7 +2078,7 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 
     .worksParent {
 
@@ -2101,7 +2101,7 @@
 
 }
 
-@media only screen and (max-width: 470px) {
+@media all and (max-width: 470px) {
 
     .worksParent {
 
@@ -2124,7 +2124,7 @@
 
 }
 
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
 
     .worksParent {
 
@@ -2135,7 +2135,7 @@
 
 }
 
-@media only screen and (max-width: 370px) {
+@media all and (max-width: 370px) {
 
     .worksParent {
 
@@ -2157,7 +2157,7 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
 
     .worksParent {
 
@@ -2187,7 +2187,7 @@
 
 
 
-@media only screen and (max-width: 1500px) {
+@media all and (max-width: 1500px) {
 
     .contactParent {
         min-height: 705px !important;
@@ -2214,7 +2214,7 @@
 
 }
 
-@media only screen and (max-width: 1400px) {
+@media all and (max-width: 1400px) {
 
     .contactParent {
 
@@ -2232,7 +2232,7 @@
 
 }
 
-@media only screen and (max-width: 1300px) {
+@media all and (max-width: 1300px) {
 
     .contactParent {
 
@@ -2264,7 +2264,7 @@
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
 
     .contactParent {
 
@@ -2286,7 +2286,7 @@
 
 }
 
-@media only screen and (max-width: 1100px) {
+@media all and (max-width: 1100px) {
 
     .contactParent {
         min-height: 700px !important;
@@ -2315,7 +2315,7 @@
 
 }
 
-@media only screen and  (max-width: 860px)  {
+@media all and  (max-width: 860px)  {
 
     .contactParent {
         min-height: 730px !important;
@@ -2373,7 +2373,7 @@
 
 }
 
-@media only screen and  (max-width: 800px)  {
+@media all and  (max-width: 800px)  {
 
     .contactParent {
         min-height: 680px !important;
@@ -2434,7 +2434,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .contactParent {
         min-height: 580px !important;
@@ -2446,7 +2446,7 @@
 
 }
 
-@media only screen and  (max-width: 650px)  {
+@media all and  (max-width: 650px)  {
 
     .contactParent {
 
@@ -2486,7 +2486,7 @@
 
 }
 
-@media only screen and  (max-width: 600px)  {
+@media all and  (max-width: 600px)  {
 
     .contactParent {
         min-height: 744px !important;
@@ -2547,7 +2547,7 @@
 
 }
 
-@media only screen and  (max-width: 470px)  {
+@media all and  (max-width: 470px)  {
 
     .contactParent {
         min-height: 635px !important;
@@ -2603,7 +2603,7 @@
 
 }
 
-@media only screen and  (max-width: 370px)  {
+@media all and  (max-width: 370px)  {
 
     .contactParent {
         min-height: 610px !important;
@@ -2652,7 +2652,7 @@
 
 }
 
-@media only screen and  (max-width: 300px)  {
+@media all and  (max-width: 300px)  {
 
     .contactParent {
 
@@ -2700,7 +2700,7 @@
 
 }
 
-@media only screen and (max-width: 1600px) {
+@media all and (max-width: 1600px) {
 
     .contactParent .successParent .success {
 
@@ -2715,7 +2715,7 @@
 
 }
 
-@media only screen and (max-width: 1100px) {
+@media all and (max-width: 1100px) {
 
     .contactParent .successParent .success {
 
@@ -2730,7 +2730,7 @@
 
 }
 
-@media only screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
 
     .contactParent .successParent .success {
 
@@ -2745,7 +2745,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
 
     .contactParent .successParent .success {
 
@@ -2760,7 +2760,7 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 
     .contactParent .successParent .success {
 
@@ -2775,7 +2775,7 @@
 
 }
 
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
 
     .contactParent .successParent .success {
 
@@ -2790,7 +2790,7 @@
 
 }
 
-@media only screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
 
     .contactParent .successParent .success {
 
@@ -2805,7 +2805,7 @@
 
 }
 
-@media only screen and (max-width: 340px) {
+@media all and (max-width: 340px) {
 
     .contactParent .successParent .success {
 
@@ -2820,7 +2820,7 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
 
     .contactParent .successParent .success {
 
@@ -2843,7 +2843,7 @@
 
 
 
-@media only screen and (max-width: 1500px) {
+@media all and (max-width: 1500px) {
 
     .footerParent {
         padding: 40px 0 25px !important;
@@ -2874,7 +2874,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
     .footerParent {
         padding: 35px 0 20px !important;
@@ -2905,7 +2905,7 @@
 
 }
 
-@media only screen and (max-width: 470px) {
+@media all and (max-width: 470px) {
 
     .footerParent {
         padding: 30px 0 20px !important;
@@ -2936,7 +2936,7 @@
 
 }
 
-@media only screen and (max-width: 370px) {
+@media all and (max-width: 370px) {
 
     .footerParent {
         padding: 25px 0 20px !important;
@@ -2967,7 +2967,7 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
 
     .footerParent {
         padding: 20px 0 !important;
