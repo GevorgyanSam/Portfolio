@@ -260,45 +260,45 @@
                             <div class="progressChild">
                                 <div>
                                     <div class="progress js">
-                                        <h2>js</h2>
+                                        <h2>JS</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                     <div class="progress php">
-                                        <h2>php</h2>
+                                        <h2>PHP</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                     <div class="progress mysql">
-                                        <h2>mysql</h2>
+                                        <h2>MySQL / PostgreSQL</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                     <div class="progress git">
-                                        <h2>git / github</h2>
+                                        <h2>Git / GitHub</h2>
                                         <div class="progressbar"></div>
                                     </div>
-                                    <div class="progress html">
-                                        <h2>html / css</h2>
+                                    <div class="progress docker">
+                                        <h2>Docker</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="progress laravel">
-                                        <h2>laravel</h2>
+                                        <h2>Laravel</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                     <div class="progress jquery">
-                                        <h2>jquery</h2>
+                                        <h2>JQuery</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                     <div class="progress bootstrap">
-                                        <h2>bootstrap</h2>
+                                        <h2>Bootstrap</h2>
                                         <div class="progressbar"></div>
                                     </div>
-                                    <div class="progress ajax">
-                                        <h2>ajax</h2>
+                                    <div class="progress html">
+                                        <h2>HTML / CSS</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                     <div class="progress sass">
-                                        <h2>sass / scss</h2>
+                                        <h2>SASS / SCSS</h2>
                                         <div class="progressbar"></div>
                                     </div>
                                 </div>

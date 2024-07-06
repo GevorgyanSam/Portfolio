@@ -975,7 +975,6 @@ body {
                         letter-spacing: 2px;
                         font-weight: 400;
                         font-size: 16px;
-                        text-transform: uppercase;
                         font-family: var(--font-family);
                         color: var(--theme-color);
                     }
@@ -1089,12 +1088,12 @@ body {
                     }
                 }
 
-                .html h2 {
+                .docker h2 {
                     @include skills_text_animation(3s);
                 }
 
-                .html .progressbar {
-                    @include progressbar(95%);
+                .docker .progressbar {
+                    @include progressbar(65%);
                     
                     &::after {
                         width: 0;
@@ -1108,7 +1107,7 @@ body {
                         }
 
                         100% {
-                            width: 95%;
+                            width: 65%;
                         }
 
                     }
@@ -1189,12 +1188,12 @@ body {
                     }
                 }
 
-                .ajax h2 {
+                .html h2 {
                     @include skills_text_animation(3.4s);
                 }
 
-                .ajax .progressbar {
-                    @include progressbar(65%);
+                .html .progressbar {
+                    @include progressbar(95%);
                     
                     &::after {
                         width: 0;
@@ -1208,7 +1207,7 @@ body {
                         }
 
                         100% {
-                            width: 65%;
+                            width: 95%;
                         }
 
                     }
